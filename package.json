@@ -1,0 +1,37 @@
+{
+  "name": "climatestudio",
+  "version": "1.0.0",
+  "description": "ClimateStudio - Lectura de EPW y analisis bioclimatico (escritorio)",
+  "author": "Universidad de San Buenaventura - Pasto",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^42.4.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "co.edu.usb.climatestudio",
+    "productName": "ClimateStudio",
+    "copyright": "Universidad de San Buenaventura - Pasto",
+    "directories": { "output": "dist" },
+    "files": [ "src/**/*", "ClimateStudio.html", "package.json" ],
+    "compression": "maximum",
+    "win": {
+      "target": [
+        { "target": "portable", "arch": ["x64"] },
+        { "target": "nsis", "arch": ["x64"] }
+      ]
+    },
+    "portable": { "artifactName": "ClimateStudio-${version}-portable.exe" },
+    "nsis": {
+      "oneClick": false, "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "ClimateStudio-${version}-setup.exe", "shortcutName": "ClimateStudio"
+    }
+  }
+}
