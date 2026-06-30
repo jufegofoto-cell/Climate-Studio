@@ -1,0 +1,38 @@
+name: Build Windows
+
+# Compila ClimateStudio para Windows x64 y publica el .exe en un RELEASE
+# (evita el limite de almacenamiento de artefactos del plan gratuito).
+#  - Ejecucion manual (Run workflow): actualiza el release "latest".
+#  - Empujar una etiqueta vX.Y.Z: crea un release con esa version.
+
+on:
+  push:
+    tags: [ 'v*' ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install
+      - name: Build portable + installer (x64)
+        run: npm run dist
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_type == 'tag' && github.ref_name || 'latest' }}
+          name: ${{ github.ref_type == 'tag' && github.ref_name || 'Última compilación (latest)' }}
+          files: dist/*.exe
+          fail_on_unmatched_files: true
