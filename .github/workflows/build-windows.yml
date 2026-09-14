@@ -6,7 +6,8 @@ name: Build Windows
 #  - Empujar una etiqueta vX.Y.Z: crea un release con esa version.
 #
 # Este workflow NO genera ni sobrescribe ningun archivo del repositorio:
-# solo compila lo que ya esta versionado.
+# solo verifica y compila lo que ya esta versionado. Todas las
+# comprobaciones van embebidas aqui, sin depender de scripts externos.
 
 on:
   push:
@@ -28,27 +29,60 @@ jobs:
         with:
           node-version: '22'
 
-      # Verificaciones baratas ANTES de instalar y descargar Electron:
-      # si algo falta, el fallo llega en segundos y no a mitad del empaquetado.
-      - name: Prepare application icon
-        run: node scripts/make-icon.js
-
-      # Diagnostico: deja constancia de lo que realmente hay en el runner.
-      # Si algo vuelve a fallar por rutas, este paso lo resuelve en una lectura.
+      # -- Diagnostico: deja constancia de lo que realmente hay en el runner --
       - name: Diagnostics
         shell: bash
         run: |
-          echo "── contenido de build/ ──"
-          ls -l build/ || echo "(la carpeta build/ NO existe)"
-          echo "── scripts declarados en package.json ──"
+          echo "-- raiz del repositorio --"
+          ls -l
+          echo "-- build/ --"
+          ls -l build/ 2>/dev/null || echo "(la carpeta build/ NO existe)"
+          echo "-- scripts de package.json --"
           node -p "JSON.stringify(require('./package.json').scripts,null,2)"
-          echo "── configuracion de iconos ──"
-          node -p "JSON.stringify({buildResources:require('./package.json').build.directories.buildResources, winIcon:require('./package.json').build.win.icon, nsis:Object.keys(require('./package.json').build.nsis)},null,2)"
+          echo "-- configuracion de iconos --"
+          node -p "JSON.stringify({buildResources:require('./package.json').build.directories.buildResources,winIcon:require('./package.json').build.win.icon,nsisKeys:Object.keys(require('./package.json').build.nsis)},null,2)"
 
-      # La app debe ser autocontenida: un solo recurso remoto la rompe
-      # en un equipo sin red. Si esto falla, no se compila nada.
-      - name: Verify offline self-containment
-        run: node scripts/check-offline.js
+      # -- Verificaciones baratas ANTES de descargar Electron (~150 MB) --
+      - name: Verify sources
+        shell: bash
+        run: |
+          fail=0
+
+          # 1. El HTML de la aplicacion debe existir
+          if [ ! -f ClimateStudio.html ]; then
+            echo "::error::Falta ClimateStudio.html en la raiz del repositorio."
+            fail=1
+          fi
+
+          # 2. El icono debe existir (lo exigen win.icon y el instalador NSIS)
+          if [ ! -f build/icon.ico ]; then
+            echo "::error::Falta build/icon.ico. Subelo con Add file > Upload files arrastrando la carpeta build completa."
+            fail=1
+          else
+            echo "build/icon.ico: $(wc -c < build/icon.ico) bytes"
+          fi
+
+          # 3. La app debe ser autocontenida. Un solo recurso remoto la rompe
+          #    en un equipo sin red, y no de forma elegante: si Chart.js no
+          #    carga, la linea Chart.defaults aborta TODO el script en linea
+          #    y media aplicacion deja de existir.
+          if [ -f ClimateStudio.html ]; then
+            if grep -qiE '(src|href)[[:space:]]*=[[:space:]]*"https?://' ClimateStudio.html; then
+              echo "::error::ClimateStudio.html contiene recursos remotos (CDN)."
+              grep -oiE '(src|href)[[:space:]]*=[[:space:]]*"https?://[^"]+' ClimateStudio.html
+              fail=1
+            else
+              echo "ClimateStudio.html: sin recursos remotos"
+            fi
+            fonts=$(grep -o 'data:font/woff2;base64' ClimateStudio.html | wc -l)
+            echo "ClimateStudio.html: $fonts tipografias embebidas"
+            if [ "$fonts" -lt 3 ]; then
+              echo "::error::Solo $fonts tipografias embebidas; se esperaban 14."
+              fail=1
+            fi
+          fi
+
+          exit $fail
 
       - name: Install dependencies
         run: npm install
