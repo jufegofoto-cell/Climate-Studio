@@ -8,9 +8,6 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "icon": "node scripts/make-icon.js",
-    "check:offline": "node scripts/check-offline.js",
-    "predist": "npm run icon && npm run check:offline",
     "dist": "electron-builder --win --x64 --publish never"
   },
   "devDependencies": {
