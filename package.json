@@ -8,8 +8,10 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder --win --x64 --publish never",
-    "check:offline": "node scripts/check-offline.js"
+    "icon": "node scripts/make-icon.js",
+    "check:offline": "node scripts/check-offline.js",
+    "predist": "npm run icon && npm run check:offline",
+    "dist": "electron-builder --win --x64 --publish never"
   },
   "devDependencies": {
     "electron": "^42.4.1",
@@ -19,14 +21,31 @@
     "appId": "co.edu.usb.climatestudio",
     "productName": "ClimateStudio",
     "copyright": "Universidad de San Buenaventura - Pasto",
-    "directories": { "output": "dist", "buildResources": "build" },
-    "files": [ "src/**/*", "ClimateStudio.html", "package.json" ],
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**/*",
+      "ClimateStudio.html",
+      "package.json"
+    ],
     "compression": "maximum",
     "win": {
       "icon": "build/icon.ico",
       "target": [
-        { "target": "portable", "arch": ["x64"] },
-        { "target": "nsis", "arch": ["x64"] }
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
       ]
     },
     "portable": {
@@ -42,10 +61,7 @@
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "runAfterFinish": true,
-      "deleteAppDataOnUninstall": true,
-      "installerIcon": "build/icon.ico",
-      "uninstallerIcon": "build/icon.ico",
-      "installerHeaderIcon": "build/icon.ico"
+      "deleteAppDataOnUninstall": true
     }
   }
 }
