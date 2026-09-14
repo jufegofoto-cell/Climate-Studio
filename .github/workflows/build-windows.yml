@@ -28,13 +28,30 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install dependencies
-        run: npm install
+      # Verificaciones baratas ANTES de instalar y descargar Electron:
+      # si algo falta, el fallo llega en segundos y no a mitad del empaquetado.
+      - name: Prepare application icon
+        run: node scripts/make-icon.js
+
+      # Diagnostico: deja constancia de lo que realmente hay en el runner.
+      # Si algo vuelve a fallar por rutas, este paso lo resuelve en una lectura.
+      - name: Diagnostics
+        shell: bash
+        run: |
+          echo "── contenido de build/ ──"
+          ls -l build/ || echo "(la carpeta build/ NO existe)"
+          echo "── scripts declarados en package.json ──"
+          node -p "JSON.stringify(require('./package.json').scripts,null,2)"
+          echo "── configuracion de iconos ──"
+          node -p "JSON.stringify({buildResources:require('./package.json').build.directories.buildResources, winIcon:require('./package.json').build.win.icon, nsis:Object.keys(require('./package.json').build.nsis)},null,2)"
 
       # La app debe ser autocontenida: un solo recurso remoto la rompe
       # en un equipo sin red. Si esto falla, no se compila nada.
       - name: Verify offline self-containment
-        run: npm run check:offline
+        run: node scripts/check-offline.js
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Build portable + installer (x64)
         run: npm run dist
