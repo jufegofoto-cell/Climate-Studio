@@ -1,0 +1,19 @@
+# Dependencias y salidas de compilacion
+node_modules/
+dist/
+out/
+build/*.exe
+*.log
+
+# electron-builder
+.cache/
+*.blockmap
+latest*.yml
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
