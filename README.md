@@ -10,6 +10,15 @@ y las fuentes (Barlow, DM Sans, DM Mono) están embebidas en el HTML.
 
 - **Confort adaptativo ASHRAE 55-2010**, banda del 90 % (±2,5 °C) y del 80 % (±3,5 °C).
   También disponibles ASHRAE 55 estático (PMV), EN 15251 Cat. II y EN 16798-1 adaptativo.
+- **Temperaturas representativas por percentil**, siguiendo los cortes de ASHRAE
+  Fundamentals: 1 % de refrigeración (P99) y 99 % de calefacción (P1), los mismos
+  que el EPW trae en su línea DESIGN CONDITIONS. Una hora anómala —un fallo de
+  sensor en un archivo AMY— deja de desplazar la lectura varios grados. El valor
+  absoluto se conserva siempre en el tooltip, con aviso visual cuando difieren.
+  Los mapas de calor (Timetable y Tablas Promedio) acotan su escala de color al
+  mismo rango P1–P99, de modo que un fallo sostenido de sensor no aplaste el
+  contraste; las celdas fuera del rango toman el color del extremo y los valores
+  mínimo y máximo reales se siguen resaltando en la tabla.
 - **Psicrometría a la presión real de la estación**, tomada del EPW o derivada de la
   altitud. Indispensable en ciudades andinas: a 2 500 m, usar 101,325 kPa subestima
   la razón de mezcla alrededor de un 37 %.
@@ -21,6 +30,11 @@ y las fuentes (Barlow, DM Sans, DM Mono) están embebidas en el HTML.
 - **Carta bioclimática de Givoni** independiente, en su propia pestaña.
 - **Temperatura del suelo** por Kusuda-Achenbach, con la amplitud de la onda anual
   (medias mensuales) y el desfase referido al mes más frío.
+- **Corrector térmico de archivos EPW**: desplaza las temperaturas un número dado de
+  grados —uniforme, diferenciado día/noche o mes a mes— conservando la coherencia
+  entre bulbo seco, punto de rocío y humedad relativa. Pensado para representar la
+  isla de calor urbana a partir de registros de estaciones rurales o periurbanas.
+  Exporta un EPW válido con la cabecera anotada.
 
 ## Estructura
 
@@ -38,10 +52,10 @@ climatestudio-desktop/
 ## Compilar en GitHub
 
 1. Sube esta carpeta a un repositorio.
-2. **Actions → Build Windows → Run workflow** (o empuja una etiqueta `v1.1.0`).
+2. **Actions → Build Windows → Run workflow** (o empuja una etiqueta `v1.4.0`).
 3. Descarga desde la pestaña **Releases**:
-   - `ClimateStudio-1.1.0-portable.exe` → se abre sin instalar.
-   - `ClimateStudio-1.1.0-setup.exe` → instalador.
+   - `ClimateStudio-1.4.0-portable.exe` → se abre sin instalar.
+   - `ClimateStudio-1.4.0-setup.exe` → instalador.
 
 El instalador es **por usuario** (`perMachine: false`): no pide permisos de
 administrador y se instala en `%LOCALAPPDATA%`. Si se necesita una instalación
