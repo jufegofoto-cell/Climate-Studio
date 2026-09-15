@@ -3,6 +3,7 @@ node_modules/
 dist/
 out/
 build/*.exe
+# build/icon.ico se versiona: electron-builder lo necesita. NO ignorarlo.
 *.log
 
 # electron-builder
