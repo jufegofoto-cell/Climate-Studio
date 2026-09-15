@@ -28,8 +28,9 @@ y las fuentes (Barlow, DM Sans, DM Mono) están embebidas en el HTML.
   a la primera técnica capaz de llevarla a la zona de confort, y se reporta el
   **confort acumulado** que aporta cada estrategia sobre las anteriores.
 - **Carta bioclimática de Givoni** independiente, en su propia pestaña.
-- **Temperatura del suelo** por Kusuda-Achenbach, con la amplitud de la onda anual
-  (medias mensuales) y el desfase referido al mes más frío.
+- **Temperatura del suelo** leída de la línea GROUND TEMPERATURES del EPW, en las
+  profundidades que el archivo declare (habitualmente 0,5, 2 y 4 m). Si el archivo
+  no las trae, se estiman con Kusuda-Achenbach y se avisa de ello.
 - **Corrector térmico de archivos EPW**: desplaza las temperaturas un número dado de
   grados —uniforme, diferenciado día/noche o mes a mes— conservando la coherencia
   entre bulbo seco, punto de rocío y humedad relativa. Pensado para representar la
@@ -52,10 +53,10 @@ climatestudio-desktop/
 ## Compilar en GitHub
 
 1. Sube esta carpeta a un repositorio.
-2. **Actions → Build Windows → Run workflow** (o empuja una etiqueta `v1.5.1`).
+2. **Actions → Build Windows → Run workflow** (o empuja una etiqueta `v1.6.0`).
 3. Descarga desde la pestaña **Releases**:
-   - `ClimateStudio-1.5.1-portable.exe` → se abre sin instalar.
-   - `ClimateStudio-1.5.1-setup.exe` → instalador.
+   - `ClimateStudio-1.6.0-portable.exe` → se abre sin instalar.
+   - `ClimateStudio-1.6.0-setup.exe` → instalador.
 
 El instalador es **por usuario** (`perMachine: false`): no pide permisos de
 administrador y se instala en `%LOCALAPPDATA%`. Si se necesita una instalación
