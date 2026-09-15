@@ -97,9 +97,21 @@ if (!gotLock) {
         label: 'Acerca de ClimateStudio',
         click: () => dialog.showMessageBox({
           type: 'info', title: 'Acerca de', message: 'ClimateStudio ' + APP_VERSION,
-          detail: 'Lectura de archivos EPW y análisis bioclimático.\n' +
-                  'Confort adaptativo ASHRAE 55-2010, banda de 90 % (±2,5 °C).\n' +
-                  'Estrategias pasivas derivadas del modelo de confort activo.\n' +
+          detail: 'Lectura de archivos EPW y análisis bioclimático.\n\n' +
+                  '• Confort adaptativo ASHRAE 55-2010, banda de 90 % (±2,5 °C) y de 80 % (±3,5 °C).\n' +
+                  '  También ASHRAE 55 estático, EN 15251 Cat. II y EN 16798-1 adaptativo.\n' +
+                  '• Psicrometría a la presión real de la estación, tomada del EPW o derivada\n' +
+                  '  de la altitud. Sin criterio de humedad en los modelos adaptativos, que\n' +
+                  '  no lo establecen.\n' +
+                  '• Posición solar con declinación y ecuación del tiempo de Spencer (1971),\n' +
+                  '  corregida por longitud y huso horario.\n' +
+                  '• Estrategias pasivas derivadas del modelo de confort activo, con reporte\n' +
+                  '  de confort acumulado por estrategia.\n' +
+                  '• Carta bioclimática de Givoni independiente.\n' +
+                  '• Temperatura del suelo por Kusuda-Achenbach.\n' +
+                  '• Corrector térmico de archivos EPW: desplaza las temperaturas conservando\n' +
+                  '  la coherencia psicrométrica, para representar la isla de calor urbana.\n\n' +
+                  'Aplicación autocontenida: no requiere conexión a internet.\n' +
                   'Universidad de San Buenaventura - Pasto.\n\nElectron ' + process.versions.electron + '.',
           buttons: ['Cerrar']
         })
