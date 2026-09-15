@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ClimateStudio 0.6 — EPW Analyzer (offline)</title>
+<title>ClimateStudio 1.0 — EPW Analyzer (offline)</title>
 <!-- ═══ LIBRERÍAS Y TIPOGRAFÍAS EMBEBIDAS — 100% OFFLINE, SIN CDN ═══ -->
 <style id="embedded-fonts">
 @font-face{font-family:'DM Sans';font-style:normal;font-weight:300;font-display:swap;src:url(data:font/woff2;base64,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) format('woff2')}
@@ -781,6 +781,7 @@ canvas{display:block}
   <button class="tab-nav-btn" onclick="switchTab('groundtemp')" data-tab="groundtemp">🌱 Temperatura Suelo</button>
   <button class="tab-nav-btn" onclick="switchTab('guidelines')" data-tab="guidelines">📐 Estrategias</button>
   <button class="tab-nav-btn" onclick="switchTab('avgtables')" data-tab="avgtables">📊 Tablas Promedio</button>
+  <button class="tab-nav-btn" onclick="switchTab('shift')" data-tab="shift">🌡 Corrector EPW</button>
 </div>
 
 <!-- LOADING -->
@@ -1557,6 +1558,115 @@ canvas{display:block}
 
   </div>
 
+  <!-- ══ TAB: CORRECTOR EPW ══ -->
+  <div class="tab-panel" id="tab-shift">
+    <div class="psy-layout">
+      <div>
+        <div class="chart-card" style="margin-bottom:16px">
+          <div class="cc-head">
+            <div class="cc-title">Corrector Térmico del Archivo</div>
+            <div class="cc-tag" id="shift-tag">ISLA DE CALOR URBANA</div>
+          </div>
+          <div class="cc-body">
+            <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-bottom:14px">
+              Desplaza las temperaturas del EPW cargado conservando la coherencia psicrométrica entre bulbo seco,
+              punto de rocío y humedad relativa. Útil cuando la estación meteorológica está en zona rural y el
+              proyecto se sitúa en zona urbana, donde la temperatura es sistemáticamente superior.
+              El resto de la aplicación sigue analizando el archivo original; la corrección solo afecta al archivo que descargues.
+            </div>
+            <div class="gi-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px">
+              <div class="gi-item"><div class="gi-lbl">Media anual</div><div class="gi-val" id="sh-mean">—</div><div class="gi-unit" id="sh-mean-d">—</div></div>
+              <div class="gi-item"><div class="gi-lbl">Máxima</div><div class="gi-val" id="sh-max">—</div><div class="gi-unit" id="sh-max-d">—</div></div>
+              <div class="gi-item"><div class="gi-lbl">Mínima</div><div class="gi-val" id="sh-min">—</div><div class="gi-unit" id="sh-min-d">—</div></div>
+              <div class="gi-item"><div class="gi-lbl">HR media</div><div class="gi-val" id="sh-rh">—</div><div class="gi-unit" id="sh-rh-d">—</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="two-col" style="margin-bottom:16px">
+          <div class="chart-card">
+            <div class="cc-head"><div class="cc-title">Media Mensual</div><div class="cc-tag">ORIGINAL vs. CORREGIDO</div></div>
+            <div class="cc-body"><canvas id="shift-month-chart" height="230"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <div class="cc-head"><div class="cc-title">Perfil Diurno Medio</div><div class="cc-tag">ORIGINAL vs. CORREGIDO</div></div>
+            <div class="cc-body"><canvas id="shift-hour-chart" height="230"></canvas></div>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="cc-head"><div class="cc-title">Medias Mensuales</div><div class="cc-tag">°C</div></div>
+          <div class="cc-body" style="overflow-x:auto"><table class="avg-table" id="shift-table"></table></div>
+        </div>
+      </div>
+
+      <div class="psy-side">
+        <div class="chart-card">
+          <div class="cc-head"><div class="cc-title" style="font-size:11px">Modo de corrección</div></div>
+          <div class="cc-body">
+            <div class="side-row">
+              <span class="side-lbl">Distribución</span>
+              <select class="filter-sel" id="sh-mode" onchange="shiftSetMode()">
+                <option value="uniform" selected>Uniforme — mismo Δ todo el año</option>
+                <option value="daynight">Diferenciado día / noche</option>
+                <option value="monthly">Un valor por mes</option>
+              </select>
+            </div>
+
+            <div id="sh-p-uniform">
+              <div class="side-row">
+                <span class="side-lbl">Incremento <span class="param-val" id="sh-v-uni">+2.0 °C</span></span>
+                <input type="range" id="sh-uni" min="-10" max="10" step="0.1" value="2" oninput="shiftOnChange()">
+              </div>
+            </div>
+
+            <div id="sh-p-daynight" style="display:none">
+              <div class="side-row"><span class="side-lbl">Δ diurno <span class="param-val" id="sh-v-day">+1.0 °C</span></span>
+                <input type="range" id="sh-day" min="-6" max="10" step="0.1" value="1" oninput="shiftOnChange()"></div>
+              <div class="side-row"><span class="side-lbl">Δ nocturno <span class="param-val" id="sh-v-night">+3.0 °C</span></span>
+                <input type="range" id="sh-night" min="-6" max="10" step="0.1" value="3" oninput="shiftOnChange()"></div>
+              <div class="side-row" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+                <div><span class="side-lbl">Amanece</span><input type="number" class="filter-sel" id="sh-sr" value="6" min="0" max="23" step="1" oninput="shiftOnChange()"></div>
+                <div><span class="side-lbl">Anochece</span><input type="number" class="filter-sel" id="sh-ss" value="18" min="1" max="24" step="1" oninput="shiftOnChange()"></div>
+              </div>
+              <div style="font-family:var(--font-m);font-size:8.5px;color:var(--text-muted);line-height:1.5">
+                La isla de calor alcanza su máximo de noche, cuando la ciudad libera el calor acumulado.
+                La transición se suaviza con un coseno a lo largo de dos horas en el alba y el ocaso.
+              </div>
+            </div>
+
+            <div id="sh-p-monthly" style="display:none">
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px" id="sh-month-grid"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="cc-head"><div class="cc-title" style="font-size:11px">Humedad</div></div>
+          <div class="cc-body">
+            <div class="side-row">
+              <select class="filter-sel" id="sh-hum" onchange="shiftOnChange()">
+                <option value="w" selected>Conservar humedad absoluta</option>
+                <option value="rh">Conservar humedad relativa</option>
+              </select>
+            </div>
+            <div id="sh-hum-note" style="font-family:var(--font-m);font-size:8.5px;color:var(--text-muted);line-height:1.55"></div>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="cc-head"><div class="cc-title" style="font-size:11px">Exportar</div></div>
+          <div class="cc-body">
+            <button class="btn-primary" id="sh-dl" onclick="exportShiftedEPW()"
+              style="width:100%;padding:10px;border:none;border-radius:7px;background:var(--teal);color:#fff;font-family:var(--font-d);font-weight:700;font-size:12.5px;cursor:pointer">
+              Descargar EPW corregido</button>
+            <div id="sh-warn" style="margin-top:9px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div><!-- /#app-section -->
 
 
@@ -1610,10 +1720,10 @@ canvas{display:block}
 
 <!-- FOOTER -->
 <div class="footer-bar" id="footer-bar" style="display:none">
-  <div class="fi">ClimateStudio <strong style="color:var(--teal)">0.2 Beta</strong></div>
+  <div class="fi">ClimateStudio <strong style="color:var(--teal)">1.0</strong></div>
   <div class="fi">ARCHIVO: <span id="footer-file">—</span></div>
   <div class="fi">REGISTROS: <span id="footer-records">—</span></div>
-  <div class="fi" style="margin-left:auto">© 2025 Climate Analysis Tool</div>
+  <div class="fi" style="margin-left:auto">Universidad de San Buenaventura · © 2026</div>
 </div>
 
 <script>
@@ -1818,6 +1928,276 @@ function getSelectedComfortModel(selectId){
 // ══════════════════════════════════════════════════════
 // TABS
 // ══════════════════════════════════════════════════════
+
+// ══════════════════════════════════════════════════════════════════
+// CORRECTOR TÉRMICO DEL ARCHIVO EPW
+// ──────────────────────────────────────────────────────────────────
+// Desplaza las temperaturas conservando la coherencia psicrométrica.
+// El EPW guarda TRES variables acopladas —bulbo seco (campo 7), punto
+// de rocío (8) y humedad relativa (9)—: desplazar solo la primera las
+// deja inconsistentes entre sí y EnergyPlus puede rechazar el archivo.
+// Hay que decidir qué se conserva:
+//   · humedad ABSOLUTA constante: el punto de rocío no cambia y la HR
+//     se recalcula. Al calentar, la HR baja. Es lo que le ocurre a una
+//     masa de aire que gana calor sin ganar vapor, y describe bien la
+//     isla de calor urbana. Es el valor por defecto.
+//   · humedad RELATIVA constante: se recalcula el punto de rocío. Esto
+//     añade vapor al aire, así que no describe una isla de calor.
+// En ambos casos se garantiza Td ≤ TBS y 0 ≤ HR ≤ 100.
+//
+// Trabaja sobre epwData.rawFields (el archivo tal como vino), NO sobre
+// epwData.hourly, que lleva los huecos ya interpolados. Así los
+// marcadores de dato ausente se conservan intactos: desplazar es una
+// cosa y rellenar huecos es otra.
+// ══════════════════════════════════════════════════════════════════
+const SHIFT_MISS_T=99.9, SHIFT_MISS_RH=999;
+
+function dewFromPv(pv){
+  const L=Math.log(Math.max(pv,1e-3)/610.78);
+  return 238.3*L/(17.2694-L);
+}
+function rhFromTd(t,td){return Math.max(0,Math.min(100,100*saturationPressure(td)/saturationPressure(t)));}
+
+function shiftSetMode(){
+  const m=document.getElementById('sh-mode').value;
+  ['uniform','daynight','monthly'].forEach(k=>
+    document.getElementById('sh-p-'+k).style.display=(k===m?'block':'none'));
+  shiftOnChange();
+}
+
+function shiftBuildMonthGrid(){
+  const g=document.getElementById('sh-month-grid');
+  if(!g||g.children.length) return;
+  g.innerHTML=MONTHS.map((mm,i)=>
+    `<div><span class="side-lbl" style="text-align:center;display:block">${mm}</span>
+      <input type="number" class="filter-sel" id="sh-m${i}" value="2" step="0.1"
+             style="text-align:center;padding:4px;font-family:var(--font-m);font-size:11px"
+             oninput="shiftOnChange()"></div>`).join('');
+}
+
+// Incremento aplicable a una hora concreta
+function shiftDeltaFor(month,hour){
+  const mode=document.getElementById('sh-mode').value;
+  const num=id=>{const v=parseFloat(document.getElementById(id).value);return isFinite(v)?v:0;};
+  if(mode==='uniform') return num('sh-uni');
+  if(mode==='monthly') return num('sh-m'+month);
+  // Día/noche con rampa de coseno de dos horas en alba y ocaso, para no
+  // introducir un escalón artificial en la serie horaria.
+  const d=num('sh-day'), n=num('sh-night');
+  const sr=num('sh-sr'), ss=num('sh-ss');
+  const h=hour+0.5;
+  const ramp=x=>0.5*(1-Math.cos(Math.PI*Math.max(0,Math.min(1,x))));
+  let f;
+  if(h<sr-1||h>ss+1) f=0;
+  else if(h<sr+1) f=ramp((h-(sr-1))/2);
+  else if(h<=ss-1) f=1;
+  else f=1-ramp((h-(ss-1))/2);
+  return n+(d-n)*f;
+}
+
+function computeShift(){
+  if(!epwData||!epwData.rawFields) return null;
+  const mode=document.getElementById('sh-hum').value;
+  const Pfallback=stationPressure();
+  const out=[], warn={saturated:0, clamped:0, missing:0};
+  epwData.rawFields.forEach(p=>{
+    const month=parseInt(p[1])-1, hour=parseInt(p[3])-1;
+    const nv=(v,miss)=>{const x=parseFloat(v);return (!isFinite(x)||Math.abs(x)>=miss)?null:x;};
+    const t0=nv(p[6],SHIFT_MISS_T), td0raw=nv(p[7],SHIFT_MISS_T), rh0raw=nv(p[8],SHIFT_MISS_RH);
+    const Pa=parseFloat(p[9]);
+    const P=(isFinite(Pa)&&Pa>30000&&Pa<120000)?Pa:Pfallback;
+    const d=shiftDeltaFor(month,hour);
+    if(t0==null){ out.push({p,month,hour,t0,t:null,td:null,rh:null,d,td0raw,rh0raw}); warn.missing++; return; }
+    // Humedad de partida: el punto de rocío define la humedad sin ambigüedad;
+    // si falta, se deduce de la HR.
+    let td0=td0raw;
+    if(td0==null&&rh0raw!=null) td0=dewFromPv(rh0raw/100*saturationPressure(t0));
+    const rh0=rh0raw!=null?rh0raw:(td0!=null?rhFromTd(t0,td0):null);
+    const t1=t0+d;
+    let td1=null, rh1=null;
+    if(td0!=null||rh0!=null){
+      if(mode==='w'){
+        td1=td0;
+        rh1=rhFromTd(t1,td1);
+        if(rh1>100){ rh1=100; td1=t1; warn.saturated++; }
+        if(td1>t1){ td1=t1; rh1=100; warn.clamped++; }
+      } else {
+        rh1=Math.max(0.1,Math.min(100,rh0));
+        td1=dewFromPv(rh1/100*saturationPressure(t1));
+        if(td1>t1){ td1=t1; rh1=100; warn.clamped++; }
+      }
+    }
+    out.push({p,month,hour,t0,t:t1,td:td1,rh:rh1,d,td0raw,rh0raw,rh0});
+  });
+  return{out,warn,mode};
+}
+
+let SHIFT_LAST=null;
+
+function drawShift(){
+  if(!epwData) return;
+  shiftBuildMonthGrid();
+  // Etiquetas de los deslizadores
+  const sv=(id,el,u)=>{const v=parseFloat(document.getElementById(id).value);
+    const e=document.getElementById(el); if(e) e.textContent=(v>=0?'+':'')+v.toFixed(1)+' '+u;};
+  sv('sh-uni','sh-v-uni','°C'); sv('sh-day','sh-v-day','°C'); sv('sh-night','sh-v-night','°C');
+
+  const dl=document.getElementById('sh-dl');
+  if(!epwData.rawFields){
+    // El clima de ejemplo se genera en memoria: no hay archivo que corregir.
+    document.getElementById('sh-warn').innerHTML=
+      '<div style="font-family:var(--font-m);font-size:9px;color:var(--orange);line-height:1.5">'+
+      'El clima de ejemplo se genera sintéticamente y no procede de un archivo EPW, '+
+      'así que no hay nada que exportar. Carga un .epw real para usar el corrector.</div>';
+    dl.disabled=true; dl.style.background='var(--border-strong)'; dl.style.cursor='not-allowed';
+    return;
+  }
+  dl.disabled=false; dl.style.background='var(--teal)'; dl.style.cursor='pointer';
+
+  const res=computeShift();
+  SHIFT_LAST=res;
+  const t0=[],t1=[],r0=[],r1=[];
+  const m0=Array.from({length:12},()=>[]),m1=Array.from({length:12},()=>[]);
+  const h0=Array.from({length:24},()=>[]),h1=Array.from({length:24},()=>[]);
+  res.out.forEach(o=>{
+    if(o.t==null)return;
+    t0.push(o.t0); t1.push(o.t);
+    if(o.rh0!=null)r0.push(o.rh0);
+    if(o.rh!=null)r1.push(o.rh);
+    m0[o.month].push(o.t0); m1[o.month].push(o.t);
+    h0[o.hour].push(o.t0);  h1[o.hour].push(o.t);
+  });
+  const mean0=avg(t0),mean1=avg(t1);
+  const d=(a,b)=>(b-a>=0?'+':'')+(b-a).toFixed(2);
+  const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  set('sh-mean',mean1.toFixed(1)); set('sh-mean-d',d(mean0,mean1)+' K');
+  // Máxima y mínima con el mismo criterio que la pestaña Clima: percentiles
+  // ASHRAE P99 (1 % refrigeración) y P1 (99 % calefacción). Una sola hora
+  // anómala del archivo de origen no debe alterar la lectura del corrector.
+  // La decisión de mostrar percentil se toma sobre la serie corregida y se
+  // aplica también a la original, para que el Δ compare cosas equivalentes.
+  const maxAbs0=Math.max(...t0), maxAbs1=Math.max(...t1);
+  const minAbs0=Math.min(...t0), minAbs1=Math.min(...t1);
+  const maxP0=percentile(t0,99),  maxP1=percentile(t1,99);
+  const minP0=percentile(t0,1),   minP1=percentile(t1,1);
+  const maxOut=(maxAbs1-maxP1)>3, minOut=(minP1-minAbs1)>3;
+  const shMax0=maxOut?maxP0:maxAbs0, shMax1=maxOut?maxP1:maxAbs1;
+  const shMin0=minOut?minP0:minAbs0, shMin1=minOut?minP1:minAbs1;
+  set('sh-max',shMax1.toFixed(1));
+  set('sh-max-d',d(shMax0,shMax1)+' K'+(maxOut?' · ⚠ P99':''));
+  set('sh-min',shMin1.toFixed(1));
+  set('sh-min-d',d(shMin0,shMin1)+' K'+(minOut?' · ⚠ P1':''));
+  const tip=(id,txt)=>{const e=document.getElementById(id);if(e&&e.closest('.gi-item'))e.closest('.gi-item').title=txt;};
+  tip('sh-max',maxOut
+    ? `Valor representativo P99 (criterio ASHRAE 1 % de refrigeración). Máx. absoluto del archivo corregido: ${maxAbs1.toFixed(1)} °C, dato puntual atípico.`
+    : `Máxima del archivo corregido. Absoluto y P99 coinciden dentro de 3 °C.`);
+  tip('sh-min',minOut
+    ? `Valor representativo P1 (criterio ASHRAE 99 % de calefacción). Mín. absoluto del archivo corregido: ${minAbs1.toFixed(1)} °C, dato puntual atípico.`
+    : `Mínima del archivo corregido. Absoluto y P1 coinciden dentro de 3 °C.`);
+  set('sh-rh',avg(r1).toFixed(1)); set('sh-rh-d',d(avg(r0),avg(r1))+' pp');
+  set('shift-tag',res.mode==='w'?'HUMEDAD ABSOLUTA CONSTANTE':'HUMEDAD RELATIVA CONSTANTE');
+
+  const pair=(id,labels,s0,s1,unit)=>{
+    if(charts[id])charts[id].destroy();
+    charts[id]=new Chart(document.getElementById(id==='shiftMonth'?'shift-month-chart':'shift-hour-chart').getContext('2d'),{
+      type:'line',data:{labels,datasets:[
+        {label:'Original',data:s0.map(v=>v.toFixed(2)),borderColor:'#94a3b8',backgroundColor:'transparent',
+         borderWidth:1.6,borderDash:[5,4],tension:.35,pointRadius:2},
+        {label:'Corregido',data:s1.map(v=>v.toFixed(2)),borderColor:'#f47c3c',backgroundColor:'rgba(244,124,60,.10)',
+         borderWidth:2.2,tension:.35,pointRadius:2.5,fill:true}
+      ]},options:co(unit)});
+  };
+  pair('shiftMonth',MONTHS,m0.map(avg),m1.map(avg),'°C');
+  pair('shiftHour',Array.from({length:24},(_,i)=>i+'h'),h0.map(avg),h1.map(avg),'°C');
+
+  // Tabla mensual
+  const mm0=m0.map(avg), mm1=m1.map(avg);
+  let t='<thead><tr><th></th>'+MONTHS.map(x=>`<th>${x}</th>`).join('')+'<th>Año</th></tr></thead><tbody>';
+  t+='<tr><th>Original</th>'+mm0.map(v=>`<td>${v.toFixed(1)}</td>`).join('')+`<td>${mean0.toFixed(1)}</td></tr>`;
+  t+='<tr><th>Corregido</th>'+mm1.map(v=>`<td>${v.toFixed(1)}</td>`).join('')+`<td>${mean1.toFixed(1)}</td></tr>`;
+  t+='<tr><th>Δ</th>'+mm1.map((v,i)=>`<td style="color:var(--orange);font-weight:600">${(v-mm0[i]>=0?'+':'')+(v-mm0[i]).toFixed(2)}</td>`).join('')+
+     `<td style="color:var(--orange);font-weight:600">${d(mean0,mean1)}</td></tr>`;
+  document.getElementById('shift-table').innerHTML=t+'</tbody>';
+
+  // Avisos
+  const w=res.warn; let wh='';
+  const box=(col,txt)=>`<div style="font-family:var(--font-m);font-size:8.5px;color:${col};line-height:1.55;margin-bottom:6px">${txt}</div>`;
+  if(w.saturated) wh+=box('var(--orange)',
+    `<strong>${w.saturated.toLocaleString()} horas alcanzan la saturación.</strong> Al enfriar manteniendo la humedad absoluta, el aire llega al punto de rocío y no puede retener más vapor; en esas horas se limita la HR al 100 %. En la realidad ese vapor condensaría, y el archivo no lo representa.`);
+  if(w.clamped) wh+=box('var(--orange)',
+    `<strong>${w.clamped.toLocaleString()} horas ajustadas</strong> porque el punto de rocío resultante superaba al bulbo seco.`);
+  if(w.missing) wh+=box('var(--text-muted)',
+    `<strong>${w.missing.toLocaleString()} horas sin temperatura registrada</strong> conservan su marcador de dato ausente: no se desplazan ni se rellenan.`);
+  wh+=box('var(--text-muted)',
+    'Se reescriben solo los campos 7, 8 y 9 de cada fila; el resto se copia sin tocar. La línea DESIGN CONDITIONS conserva los valores originales y no se modifican la radiación infrarroja ni el viento: un desplazamiento de temperatura es una aproximación de primer orden a la isla de calor, no un modelo de microclima urbano.');
+  document.getElementById('sh-warn').innerHTML=wh;
+
+  document.getElementById('sh-hum-note').innerHTML = res.mode==='w'
+    ? 'El punto de rocío se mantiene y la HR se recalcula. Al calentar, la HR <strong>baja</strong>: es lo que le ocurre a una masa de aire que gana calor sin ganar vapor.'
+    : 'Se mantiene la HR y se recalcula el punto de rocío. Esto <strong>añade vapor</strong> al aire, así que no describe una isla de calor.';
+}
+
+function shiftOnChange(){ if(document.getElementById('tab-shift').classList.contains('active')) drawShift(); }
+
+function shiftLabel(){
+  const mode=document.getElementById('sh-mode').value;
+  const num=id=>parseFloat(document.getElementById(id).value)||0;
+  if(mode==='uniform'){const v=num('sh-uni');return (v>=0?'+':'')+v.toFixed(1)+'C';}
+  if(mode==='daynight'){const d=num('sh-day'),n=num('sh-night');
+    return `dia${d>=0?'+':''}${d.toFixed(1)}_noche${n>=0?'+':''}${n.toFixed(1)}C`;}
+  return 'mensual';
+}
+
+function exportShiftedEPW(){
+  if(!epwData||!epwData.rawFields) return;
+  const res=SHIFT_LAST||computeShift();
+  if(!res) return;
+  const meanD=avg(res.out.map(o=>o.d));
+  const lbl=shiftLabel();
+  const header=epwData.rawHeader.map(l=>{
+    const p=l.split(',');
+    if(/^LOCATION/i.test(p[0])){ p[1]=(p[1]||'')+'_UHI'+lbl; return p.join(','); }
+    if(/^GROUND TEMPERATURES/i.test(p[0])){
+      // Las 12 temperaturas de cada juego empiezan 4 campos tras la profundidad:
+      // prof, conductividad, densidad, capacidad, t1..t12. Se desplazan según el
+      // incremento medio anual, ya que el terreno sigue a la temperatura del aire.
+      const n=parseInt(p[1])||0; let k=2;
+      for(let s=0;s<n;s++){
+        for(let mm=0;mm<12;mm++){
+          const v=parseFloat(p[k+4+mm]);
+          if(isFinite(v)) p[k+4+mm]=(v+meanD).toFixed(2);
+        }
+        k+=16;
+      }
+      return p.join(',');
+    }
+    if(/^COMMENTS 1/i.test(p[0])){
+      return l+' | ClimateStudio Corrector EPW: temperaturas desplazadas '+lbl.replace('_',' ')+
+             ' (media '+(meanD>=0?'+':'')+meanD.toFixed(2)+' K), humedad '+
+             (res.mode==='w'?'absoluta':'relativa')+' constante.';
+    }
+    return l;
+  });
+  const data=res.out.map(o=>{
+    const f=o.p.slice();
+    if(o.t!=null){
+      f[6]=o.t.toFixed(1);
+      // Un campo solo se reescribe si en el original TENÍA dato. Si venía marcado
+      // como ausente (99.9 en temperaturas, 999 en HR), el marcador se conserva.
+      if(o.td!=null && o.td0raw!=null) f[7]=o.td.toFixed(1);
+      if(o.rh!=null && o.rh0raw!=null) f[8]=String(Math.round(o.rh));
+    }
+    return f.join(',');
+  });
+  const blob=new Blob([header.concat(data).join('\r\n')+'\r\n'],{type:'text/plain'});
+  const base=(epwData.filename||'clima').replace(/\.epw$/i,'');
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=`${base}_UHI${lbl}.epw`;
+  document.body.appendChild(a); a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);
+}
+
 function switchTab(name){
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab-nav-btn').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));
@@ -1832,6 +2212,7 @@ function switchTab(name){
   if(name==='timetable') drawTimetable();
   if(name==='diurnal') drawDiurnal(0);
   if(name==='avgtables') drawAvgTables();
+  if(name==='shift') drawShift();
 }
 
 function switchWindSubtab(name){
@@ -1872,6 +2253,12 @@ function parseEPW(text,filename){
   const dataLines=[];
   for(let i=8;i<lines.length;i++){const p=lines[i].split(',');if(p.length>=22)dataLines.push(p)}
   if(dataLines.length<8760) throw new Error(`Solo ${dataLines.length} filas`);
+  // Se conserva la cabecera original y los campos sin procesar de cada fila.
+  // El resto de la aplicación trabaja con los valores ya interpretados (y con
+  // los huecos interpolados), pero el CORRECTOR necesita el archivo tal como
+  // vino: reescribe solo tres columnas y copia las demás carácter a carácter.
+  const rawHeader=lines.slice(0,8);
+  const rawFields=dataLines;
 
   // Temperaturas del suelo declaradas en la cabecera del EPW (línea GROUND TEMPERATURES).
   // Formato: GROUND TEMPERATURES,nSets,prof1,cond,dens,cap,t1..t12, prof2,...
@@ -1994,7 +2381,7 @@ function parseEPW(text,filename){
   });
   hourly.forEach(r=>{delete r._miss;});
 
-  epwData={city,state,country,source,lat,lon,tz,elev,hourly,filename,groundHdr,qc};
+  epwData={city,state,country,source,lat,lon,tz,elev,hourly,filename,groundHdr,qc,rawHeader,rawFields};
   initApp();
 }
 
@@ -2083,12 +2470,28 @@ function buildStats(){
   const ghis  =h.map(r=>r[7]).filter(v=>v!=null&&v>=0);
   const winds =h.map(r=>r[15]).filter(v=>v!=null&&v>=0);
   const tmaxAbs=Math.max(...temps),tminAbs=Math.min(...temps),tavg=avg(temps);
-  // Temperaturas representativas: se usan percentiles (P98/P2) en lugar de los extremos
-  // absolutos, siguiendo la metodología ASHRAE Fundamentals que emplea percentiles para
-  // descartar valores puntuales atípicos (outliers) que no son representativos del clima.
-  // Los valores absolutos se conservan en los tooltips como dato informativo.
-  const tmaxP98=percentile(temps,98);
-  const tminP2=percentile(temps,2);
+  // ══════════════════════════════════════════════════════════════════
+  // TEMPERATURAS REPRESENTATIVAS — criterio de percentil de ASHRAE
+  // ──────────────────────────────────────────────────────────────────
+  // Se muestran percentiles en lugar de los extremos absolutos, porque una
+  // sola hora anómala —un fallo de sensor en un archivo AMY, por ejemplo—
+  // desplaza el máximo absoluto varios grados sin decir nada sobre el clima.
+  //
+  // Los cortes son los de ASHRAE Fundamentals, los mismos que el propio EPW
+  // trae en su línea DESIGN CONDITIONS:
+  //   · refrigeración 1 %  → temperatura superada el 1 % de las horas  = P99
+  //   · calefacción  99 %  → temperatura superada el 99 % de las horas = P1
+  // En un año de 8 760 h eso deja 88 horas a cada lado.
+  //
+  // Matiz importante: ASHRAE calcula sus condiciones de diseño sobre series
+  // largas (típicamente 25+ años). Aquí se aplica el mismo criterio a un solo
+  // archivo, así que es una aproximación al percentil de diseño, no el valor
+  // oficial. El dato oficial, si el EPW lo trae, está en su cabecera.
+  //
+  // El absoluto se conserva siempre en el tooltip.
+  // ══════════════════════════════════════════════════════════════════
+  const tmaxP99=percentile(temps,99);   // ASHRAE 1 % refrigeración
+  const tminP1 =percentile(temps,1);    // ASHRAE 99 % calefacción
   const rhavg=avg(rhs);
   const ghiTotal=ghis.reduce((a,b)=>a+b,0)/1000;
   const windAvg=avg(winds);
@@ -2099,33 +2502,32 @@ function buildStats(){
     return r[0]>=(Tn-_ADAPT_OFFSET_INNER)&&r[0]<=(Tn+_ADAPT_OFFSET_INNER)&&r[2]<=COMFORT_RH_HIGH;
   }).length;
   const fmt=v=>v.toFixed(1);
-  // Detectar outlier en máxima: si el máximo absoluto está más de 3 °C por encima del P98,
-  // se muestra el P98 como valor principal con indicador visual.
-  const isOutlierMax=(tmaxAbs-tmaxP98)>3;
-  const tmaxDisplay=isOutlierMax?tmaxP98:tmaxAbs;
+  // Si el máximo absoluto se separa más de 3 °C del P99, se considera un dato
+  // puntual atípico y se muestra el P99 como valor principal, con indicador.
+  const isOutlierMax=(tmaxAbs-tmaxP99)>3;
+  const tmaxDisplay=isOutlierMax?tmaxP99:tmaxAbs;
   const elTmax=document.getElementById('s-tmax');
   const elTmaxUnit=elTmax.closest('.stat-item')?.querySelector('.sunit');
   elTmax.textContent=fmt(tmaxDisplay);
   if(isOutlierMax){
-    elTmax.title=`Valor representativo P98. Máx. absoluto del EPW: ${fmt(tmaxAbs)} °C (dato puntual atípico). Se muestra P98 según metodología ASHRAE.`;
+    elTmax.title=`Valor representativo P99 (criterio ASHRAE 1 % de refrigeración: superado 88 h/año). Máx. absoluto del EPW: ${fmt(tmaxAbs)} °C, dato puntual atípico.`;
     if(elTmaxUnit){
-      elTmaxUnit.innerHTML=`°C <span style="color:var(--orange);font-size:8px;cursor:help" title="Máx. representativo P98 — el máximo absoluto del EPW (${fmt(tmaxAbs)} °C) es un dato puntual atípico. Se muestra P98 según metodología ASHRAE.">⚠ P98</span>`;
+      elTmaxUnit.innerHTML=`°C <span style="color:var(--orange);font-size:8px;cursor:help" title="Máx. representativo P99 — criterio ASHRAE 1 % de refrigeración (superado 88 h/año). El máximo absoluto del EPW (${fmt(tmaxAbs)} °C) es un dato puntual atípico.">⚠ P99</span>`;
     }
   } else {
     elTmax.title='';
     if(elTmaxUnit) elTmaxUnit.textContent='°C';
   }
-  // Detectar outlier en mínima: si el mínimo absoluto está más de 3 °C por debajo del P2, se muestra
-  // el P2 como valor principal y se añade una nota visual sobre el outlier.
-  const isOutlier=(tminP2-tminAbs)>3;
-  const tminDisplay=isOutlier?tminP2:tminAbs;
+  // Ídem para la mínima, contra el P1.
+  const isOutlier=(tminP1-tminAbs)>3;
+  const tminDisplay=isOutlier?tminP1:tminAbs;
   const elTmin=document.getElementById('s-tmin');
   const elTminUnit=elTmin.closest('.stat-item')?.querySelector('.sunit');
   elTmin.textContent=fmt(tminDisplay);
   if(isOutlier){
-    elTmin.title=`Valor representativo P2. Mín. absoluto del EPW: ${fmt(tminAbs)} °C (dato puntual atípico — 1 hora en el año).`;
+    elTmin.title=`Valor representativo P1 (criterio ASHRAE 99 % de calefacción: solo 88 h/año son más frías). Mín. absoluto del EPW: ${fmt(tminAbs)} °C, dato puntual atípico.`;
     if(elTminUnit){
-      elTminUnit.innerHTML=`°C <span style="color:var(--orange);font-size:8px;cursor:help" title="Mín. representativo P2 — el mínimo absoluto del EPW (${fmt(tminAbs)} °C) es un dato puntual atípico (1 h/año). Se muestra P2 según metodología ASHRAE.">⚠ P2</span>`;
+      elTminUnit.innerHTML=`°C <span style="color:var(--orange);font-size:8px;cursor:help" title="Mín. representativo P1 — criterio ASHRAE 99 % de calefacción (solo 88 h/año son más frías). El mínimo absoluto del EPW (${fmt(tminAbs)} °C) es un dato puntual atípico.">⚠ P1</span>`;
     }
   } else {
     elTmin.title='';
@@ -2143,7 +2545,10 @@ function avg(arr){
   return valid.length?valid.reduce((a,b)=>a+b,0)/valid.length:0;
 }
 
-// Percentil p (0-100) sobre un array numérico — interpolación lineal (método ASHRAE / Excel)
+// Percentil p (0-100) sobre un array numérico — interpolación lineal.
+// Es el método de PERCENTILE.INC de Excel y el que usa ASHRAE para las
+// condiciones de diseño: se ordena la serie y se interpola entre los dos
+// valores que flanquean la posición (p/100)·(n−1).
 function percentile(arr,p){
   const sorted=[...arr].filter(v=>v!=null&&!isNaN(v)).sort((a,b)=>a-b);
   if(!sorted.length)return null;
@@ -2605,7 +3010,20 @@ function drawTimetable(){
     return avg(v)||0;
   }));
   const allVals=grid.flat();
-  const mn=Math.min(...allVals),mx=Math.max(...allVals);
+  // ══════════════════════════════════════════════════════════════════
+  // La escala de color se acota a P1–P99 de las 288 celdas (12 meses × 24 h)
+  // en lugar de al mínimo y máximo absolutos.
+  //
+  // Cada celda ya es una media de ~30 valores, así que una hora anómala
+  // suelta apenas la mueve: el promediado ya la diluye. Lo que esto protege
+  // es el caso que sí desplaza una media, un fallo SOSTENIDO —un sensor
+  // atascado varios días— que arrastraría la celda entera y aplastaría el
+  // contraste de todo el mapa.
+  //
+  // Las funciones de paleta recortan con clamp(), así que las celdas fuera
+  // del rango se dibujan con el color del extremo, no desaparecen.
+  // ══════════════════════════════════════════════════════════════════
+  const mn=percentile(allVals,1), mx=percentile(allVals,99);
   const oX=46,oY=24,cW=(W-oX-10)/12,cH=(300-oY-30)/24;
   // Color fn — paleta diferenciada por categoría de métrica
   const colorFn=(v)=>{
@@ -4061,7 +4479,7 @@ function loadExample(city){
       hourly.push(row);
     }
     _P_STATION=null;
-    epwData={city:c.city,state:'',country:c.country,source:c.source,lat:c.lat,lon:c.lon,tz:(c.tz!=null?c.tz:-5),elev:c.elev,hourly,filename:`${city}_example.epw`,groundHdr:[],qc:{}};
+    epwData={city:c.city,state:'',country:c.country,source:c.source,lat:c.lat,lon:c.lon,tz:(c.tz!=null?c.tz:-5),elev:c.elev,hourly,filename:`${city}_example.epw`,groundHdr:[],qc:{},rawHeader:null,rawFields:null};
     initApp();
   },400);
 }
@@ -4136,7 +4554,7 @@ function exportPDF(){
     pdf.setFillColor(0,180,166);
     pdf.rect(0,0,pW,10,'F');
     pdf.setFontSize(7);pdf.setTextColor(255,255,255);
-    pdf.text('ClimateStudio 0.6 — '+epwData.city+', '+epwData.country,4,6.5);
+    pdf.text('ClimateStudio 1.0 — '+epwData.city+', '+epwData.country,4,6.5);
     pdf.text(new Date().toLocaleDateString('es',{year:'numeric',month:'long',day:'numeric'}),pW-4,6.5,{align:'right'});
     // Image
     const imgH=(canvas.height/canvas.width)*(pW);
@@ -4146,7 +4564,7 @@ function exportPDF(){
     pdf.addImage(imgData,'JPEG',(pW-finalW)/2,yStart,finalW,finalH);
     // Footer
     pdf.setFontSize(6);pdf.setTextColor(150,150,150);
-    pdf.text('Generado con ClimateStudio 0.6 — Datos EPW: '+epwData.filename,pW/2,pH-2,{align:'center'});
+    pdf.text('Generado con ClimateStudio 1.0 — Datos EPW: '+epwData.filename,pW/2,pH-2,{align:'center'});
     pdf.save('ClimateStudio-'+epwData.city+'.pdf');
   });
 }
@@ -4172,14 +4590,15 @@ function makeCompareStats(d){
   const winds=h.map(r=>r[15]).filter(v=>v>=0);
   const ghis=h.map(r=>r[7]).filter(v=>v>=0);
   const tmaxAbsC=Math.max(...temps),tminAbsC=Math.min(...temps),tavg=avg(temps).toFixed(1);
-  const tmaxP98c=percentile(temps,98);
-  const tminP2c=percentile(temps,2);
-  const tmaxC=((tmaxAbsC-tmaxP98c)>3?tmaxP98c:tmaxAbsC).toFixed(1);
-  const tminC=((tminP2c-tminAbsC)>3?tminP2c:tminAbsC).toFixed(1);
+  // Mismos cortes que la pestaña Clima: ASHRAE 1 % (P99) y 99 % (P1)
+  const tmaxP99c=percentile(temps,99);
+  const tminP1c =percentile(temps,1);
+  const tmaxC=((tmaxAbsC-tmaxP99c)>3?tmaxP99c:tmaxAbsC).toFixed(1);
+  const tminC=((tminP1c-tminAbsC)>3?tminP1c:tminAbsC).toFixed(1);
   const rha=avg(rhs).toFixed(0), wa=avg(winds).toFixed(1);
   const ghitotal=(ghis.reduce((a,b)=>a+b,0)/1000).toFixed(0);
   const pairs=[
-    ['T. Máx (P98)',tmaxC,'°C'],['T. Mín (P2)',tminC,'°C'],['T. Media',tavg,'°C'],
+    ['T. Máx (P99)',tmaxC,'°C'],['T. Mín (P1)',tminC,'°C'],['T. Media',tavg,'°C'],
     ['HR Media',rha,'%'],['Viento Med.',wa,'m/s'],['GHI Total',ghitotal,'kWh/m²']
   ];
   return pairs.map(([l,v,u])=>`<div class="cstat"><div class="cstat-l">${l}</div><div class="cstat-v">${v}<span class="cstat-u"> ${u}</span></div></div>`).join('');
@@ -5226,8 +5645,22 @@ function drawAvgTables(){
   if(meta.agg==='circ') grandMean = circMean(allVals);
   else grandMean = allVals.reduce((a,b)=>a+b,0)/allVals.length;
 
-  const vmin = Math.min(...allVals);
-  const vmax = Math.max(...allVals);
+  // ══════════════════════════════════════════════════════════════════
+  // La escala de color se acota a P1–P99 de las 288 celdas (24 h × 12 meses),
+  // el mismo criterio que el Timetable, para que ambos mapas de calor se lean
+  // con la misma regla.
+  //
+  // Cada celda ya promedia ~30 valores, así que una hora anómala apenas la
+  // mueve. Lo que esto evita es que un fallo SOSTENIDO —un sensor atascado
+  // varios días— arrastre una celda entera y aplaste el contraste del mapa.
+  //
+  // Las cuatro paletas de makePalette() recortan con Math.max(0,Math.min(1,t)),
+  // así que las celdas fuera del rango se pintan con el color del extremo.
+  // Los valores min/max ABSOLUTOS siguen calculándose más abajo (minLoc/maxLoc)
+  // y se resaltan en la tabla: la escala se acota, el dato no se oculta.
+  // ══════════════════════════════════════════════════════════════════
+  const vmin = percentile(allVals, 1);
+  const vmax = percentile(allVals, 99);
   // Mediana para escala divergente
   const sorted = [...allVals].sort((a,b)=>a-b);
   const median = sorted[Math.floor(sorted.length/2)];
