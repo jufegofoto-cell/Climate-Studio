@@ -67,10 +67,10 @@ climatestudio-desktop/
 ## Compilar en GitHub
 
 1. Sube esta carpeta a un repositorio.
-2. **Actions → Build Windows → Run workflow** (o empuja una etiqueta `v1.9.1`).
+2. **Actions → Build Windows → Run workflow** (o empuja una etiqueta `v1.9.2`).
 3. Descarga desde la pestaña **Releases**:
-   - `ClimateStudio-1.9.1-portable.exe` → se abre sin instalar.
-   - `ClimateStudio-1.9.1-setup.exe` → instalador.
+   - `ClimateStudio-1.9.2-portable.exe` → se abre sin instalar.
+   - `ClimateStudio-1.9.2-setup.exe` → instalador.
 
 El instalador es **por usuario** (`perMachine: false`): no pide permisos de
 administrador y se instala en `%LOCALAPPDATA%`. Si se necesita una instalación
