@@ -31,11 +31,25 @@ y las fuentes (Barlow, DM Sans, DM Mono) están embebidas en el HTML.
 - **Temperatura del suelo** leída de la línea GROUND TEMPERATURES del EPW, en las
   profundidades que el archivo declare (habitualmente 0,5, 2 y 4 m). Si el archivo
   no las trae, se estiman con Kusuda-Achenbach y se avisa de ello.
+- **Pluviometría** leída del campo 34 del EPW (*Liquid Precipitation Depth*), con
+  totales mensuales, distribución horaria, reparto por intensidades y **rosa de
+  lluvia**: la precipitación cruzada con la dirección del viento concurrente, que
+  indica qué fachadas reciben el agua. No confunde este campo con el 29
+  (*Precipitable Water*), que mide el vapor de la columna atmosférica y no es lluvia.
+  Si el archivo no trae precipitación —el caso de buena parte de los TMY3 e IWEC—,
+  lo dice explícitamente en lugar de mostrar ceros.
 - **Corrector térmico de archivos EPW**: desplaza las temperaturas un número dado de
   grados —uniforme, diferenciado día/noche o mes a mes— conservando la coherencia
   entre bulbo seco, punto de rocío y humedad relativa. Pensado para representar la
   isla de calor urbana a partir de registros de estaciones rurales o periurbanas.
-  Exporta un EPW válido con la cabecera anotada.
+  Exporta un EPW válido con la cabecera anotada. También permite **editar los totales
+  mensuales de precipitación**. En los meses que ya tienen lluvia se reescalan sus horas,
+  de modo que no cambia qué días llueve ni el reparto de intensidades, solo la magnitud.
+  En los meses que el archivo trae secos la lluvia se **inyecta** en las horas más
+  nubladas y húmedas del propio mes: el número de horas sale de la fracción media de
+  horas lluviosas del archivo y las intensidades, de su distribución real. El método es
+  determinista y solo escribe el campo 34; no ajusta nubosidad, radiación ni códigos de
+  tiempo presente, lo que conviene declarar si el archivo se usa para simulación energética.
 
 ## Estructura
 
@@ -53,10 +67,10 @@ climatestudio-desktop/
 ## Compilar en GitHub
 
 1. Sube esta carpeta a un repositorio.
-2. **Actions → Build Windows → Run workflow** (o empuja una etiqueta `v1.6.0`).
+2. **Actions → Build Windows → Run workflow** (o empuja una etiqueta `v1.8.0`).
 3. Descarga desde la pestaña **Releases**:
-   - `ClimateStudio-1.6.0-portable.exe` → se abre sin instalar.
-   - `ClimateStudio-1.6.0-setup.exe` → instalador.
+   - `ClimateStudio-1.8.0-portable.exe` → se abre sin instalar.
+   - `ClimateStudio-1.8.0-setup.exe` → instalador.
 
 El instalador es **por usuario** (`perMachine: false`): no pide permisos de
 administrador y se instala en `%LOCALAPPDATA%`. Si se necesita una instalación
