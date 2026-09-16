@@ -8,6 +8,14 @@ name: Build Windows
 # Este workflow NO genera ni sobrescribe ningun archivo del repositorio:
 # solo verifica y compila lo que ya esta versionado. Todas las
 # comprobaciones van embebidas aqui, sin depender de scripts externos.
+#
+# Acciones fijadas a majors que declaran runs.using: node24. GitHub retira
+# Node 20 de los runners el 16 de septiembre de 2026; las acciones que sigan
+# declarando node20 dejaran de arrancar. checkout@v5, setup-node@v5 y
+# action-gh-release@v3 son los primeros majors con node24; el cambio en las
+# tres es solo de runtime, sin diferencias de entradas ni de comportamiento.
+# Existen majors posteriores (checkout v6/v7, setup-node v6): tambien valen,
+# pero no aportan nada para este workflow.
 
 on:
   push:
@@ -22,10 +30,10 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '22'
 
@@ -95,7 +103,7 @@ jobs:
         run: ls -lh dist/*.exe
 
       - name: Publish to Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ github.ref_type == 'tag' && github.ref_name || 'latest' }}
           name: ${{ github.ref_type == 'tag' && github.ref_name || 'Última compilación (latest)' }}
