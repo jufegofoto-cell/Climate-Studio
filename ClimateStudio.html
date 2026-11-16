@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ClimateStudio 1.8 — EPW Analyzer (offline)</title>
+<title>ClimateStudio 1.10 — EPW Analyzer (offline)</title>
 <!-- ═══ LIBRERÍAS Y TIPOGRAFÍAS EMBEBIDAS — 100% OFFLINE, SIN CDN ═══ -->
 <style id="embedded-fonts">
 @font-face{font-family:'DM Sans';font-style:normal;font-weight:300;font-display:swap;src:url(data:font/woff2;base64,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) format('woff2')}
@@ -661,6 +661,38 @@ canvas{display:block}
 .wind-stab{font-family:var(--font-d);font-size:11px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:var(--text-muted);background:none;border:none;padding:7px 16px;border-radius:var(--rs);cursor:pointer;transition:all .15s}
 .wind-stab:hover{background:var(--bg-hover);color:var(--text-secondary)}
 .wind-stab.active{background:var(--teal);color:#fff}
+.wind-stab-table{margin-left:auto;border:1px solid var(--teal);color:var(--teal-mid)}
+.wind-stab-table:hover{background:var(--teal-light);color:var(--teal-dark)}
+.eco-tip{position:fixed;z-index:9999;display:none;pointer-events:none;max-width:180px;background:#0f172a;color:#fff;font-family:var(--font-m);font-size:10px;line-height:1.5;padding:6px 9px;border-radius:6px;box-shadow:0 6px 18px rgba(15,23,42,.3)}
+.eco-tip-h{font-family:var(--font-d);font-weight:700;letter-spacing:.8px;text-transform:uppercase;font-size:9.5px;color:#7dd3c8;margin-bottom:2px}
+/* ── WIND: período horario personalizado ── */
+.wp-custom{display:flex;align-items:center;gap:10px;flex-wrap:wrap;flex-basis:100%;padding-top:8px;margin-top:2px;border-top:1px dashed var(--border)}
+.wp-chips{display:flex;gap:3px;flex-wrap:wrap}
+.wp-chip{width:27px;height:24px;padding:0;font-family:var(--font-m);font-size:10px;font-weight:500;color:var(--text-muted);background:var(--bg-panel);border:1px solid var(--border-strong);border-radius:4px;cursor:pointer;user-select:none;transition:background .1s,color .1s,border-color .1s}
+.wp-chip:hover{border-color:var(--teal)}
+.wp-chip.on{background:var(--teal);border-color:var(--teal);color:#fff}
+.wp-chip:focus-visible{outline:2px solid var(--teal-mid);outline-offset:1px}
+.wp-hint{font-family:var(--font-m);font-size:9px;color:var(--text-muted);letter-spacing:.3px}
+/* ── WIND: tabla resumen mes × hora (paleta del Excel de referencia) ── */
+.wt-title{background:#087e8b;color:#fff;font-family:var(--font-d);font-weight:700;font-size:14px;letter-spacing:.6px;text-align:center;padding:7px 12px;border-radius:var(--rs) var(--rs) 0 0}
+.wt-src{font-family:var(--font-b);font-size:11.5px;font-style:italic;color:#245b63;padding:6px 4px 1px}
+.wt-note{font-family:var(--font-b);font-size:10.5px;color:#245b63;padding:1px 4px 9px}
+.wt-wrap{overflow-x:auto;border:1px solid #b7dedc;border-radius:var(--rs)}
+.wt-table{border-collapse:separate;border-spacing:0;font-family:var(--font-m);font-size:10.5px;color:#174f52;white-space:nowrap}
+.wt-table th,.wt-table td{padding:5px 8px;text-align:center;border-right:1px solid #b7dedc;border-bottom:1px solid #b7dedc}
+.wt-table thead th{background:#159a9c;color:#fff;font-family:var(--font-d);font-weight:700;font-size:10.5px;letter-spacing:.3px}
+.wt-table thead th.wt-sub{background:#42bfc0}
+.wt-table thead th.wt-per{background:#087e8b}
+.wt-table thead th.wt-sub.wt-per{background:#159a9c}
+.wt-table tbody th{background:#ddf6f5;color:#07575b;font-family:var(--font-d);font-weight:700;font-size:12px;text-align:left;padding-right:14px}
+.wt-table thead th.wt-corner,.wt-table tbody th{position:sticky;left:0;z-index:2}
+.wt-table thead th.wt-corner{z-index:3}
+.wt-table tr.wt-a td{background:#f0fbfa}
+.wt-table tr.wt-b td{background:#e3f6f5}
+.wt-table td.wt-spd{font-variant-numeric:tabular-nums}
+.wt-table td.wt-per,.wt-table tr.wt-annual td,.wt-table tr.wt-annual th{background:#bfedef;color:#07575b;font-weight:700}
+.wt-table tbody tr:last-child th,.wt-table tbody tr:last-child td{border-bottom:none}
+.wt-table tr>*:last-child{border-right:none}
 
 /* ── MONTHLY ROSE GRID ── */
 .mrose-cell{background:var(--bg-sidebar);border:1px solid var(--border);border-radius:var(--rs);padding:8px 4px 4px;text-align:center;position:relative}
@@ -1187,6 +1219,38 @@ canvas{display:block}
     <div class="wind-subtabs" style="display:flex;gap:6px;margin-bottom:16px;background:var(--bg-panel);border:1px solid var(--border);border-radius:var(--r);padding:6px;box-shadow:var(--shadow-sm)">
       <button class="wind-stab active" id="wst-single" onclick="switchWindSubtab('single')">Rosa de Vientos</button>
       <button class="wind-stab" id="wst-monthly" onclick="switchWindSubtab('monthly')">Análisis Mensual (12 rosas)</button>
+      <button class="wind-stab wind-stab-table" id="wst-table" onclick="switchWindSubtab('table')" title="Velocidad y dirección promedio del viento por mes y hora">▦ Tabla Resumen de Viento</button>
+    </div>
+
+    <!-- Período horario de análisis: común a todas las vistas de viento -->
+    <div class="chart-card" id="wind-period-card">
+      <div class="filter-row" style="border-bottom:none">
+        <div class="filter-group" id="wr-period-group"><span class="filter-lbl">Período horario de análisis</span>
+          <select class="filter-sel" id="wr-period" onchange="onWindPeriodChange()">
+            <option value="all">Todo el día</option>
+            <option value="night">Madrugada 0–6h</option>
+            <option value="morning">Mañana 6–12h</option>
+            <option value="afternoon">Tarde 12–18h</option>
+            <option value="evening">Noche 18–24h</option>
+            <option value="day">Diurno 6–18h</option>
+            <option value="custom">Personalizado…</option>
+          </select>
+        </div>
+        <div style="margin-left:auto"><span class="chip chip-t" id="wp-summary">24 h/día · Todo el día (00:00–24:00)</span></div>
+        <div class="wp-custom" id="wp-custom" style="display:none">
+          <div class="filter-group"><span class="filter-lbl">Desde</span>
+            <select class="filter-sel" id="wp-h0" onchange="setWindRange()"></select>
+          </div>
+          <div class="filter-group"><span class="filter-lbl">Hasta</span>
+            <select class="filter-sel" id="wp-h1" onchange="setWindRange()"></select>
+          </div>
+          <div class="filter-group"><span class="filter-lbl">Horas</span>
+            <div class="wp-chips" id="wp-chips"></div>
+          </div>
+          <button class="avg-btn-mini" onclick="invertWindHours()" title="Intercambia las horas incluidas y excluidas">Invertir</button>
+          <span class="wp-hint">Clic o arrastre sobre las horas para armar períodos discontinuos · si «Hasta» ≤ «Desde», el tramo cruza la medianoche</span>
+        </div>
+      </div>
     </div>
 
     <!-- PANEL: single rose -->
@@ -1200,6 +1264,21 @@ canvas{display:block}
               <option value="freq">Rosa: frecuencia por dirección (%)</option>
               <option value="speed">Rosa: velocidad media por dirección (m/s)</option>
               <option value="wheel">Rueda anual: mes × dirección</option>
+              <optgroup label="Rosa matricial (tipo Ecotect): dirección × velocidad">
+                <option value="eco-freq">Matricial: frecuencia (horas)</option>
+                <option value="eco-temp">Matricial: temperatura del aire (°C)</option>
+                <option value="eco-rh">Matricial: humedad relativa (%)</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="filter-group" id="wr-stat-group" style="display:none"><span class="filter-lbl">Estadístico</span>
+            <select class="filter-sel" id="wr-stat" onchange="drawWindRose()">
+              <option value="mean">Media</option><option value="min">Mínima</option><option value="max">Máxima</option>
+            </select>
+          </div>
+          <div class="filter-group" id="wr-units-group" style="display:none"><span class="filter-lbl">Anillos</span>
+            <select class="filter-sel" id="wr-units" onchange="drawWindRose()">
+              <option value="ms">1 m/s</option><option value="kmh">5 km/h</option>
             </select>
           </div>
           <div class="filter-group" id="wr-month-group"><span class="filter-lbl">Mes</span>
@@ -1211,16 +1290,6 @@ canvas{display:block}
               <option value="9">Octubre</option><option value="10">Noviembre</option><option value="11">Diciembre</option>
             </select>
           </div>
-          <div class="filter-group" id="wr-period-group"><span class="filter-lbl">Período</span>
-            <select class="filter-sel" id="wr-period" onchange="drawWindRose()">
-              <option value="all">Todo el día</option>
-              <option value="night">Madrugada 0–6h</option>
-              <option value="morning">Mañana 6–12h</option>
-              <option value="afternoon">Tarde 12–18h</option>
-              <option value="evening">Noche 18–24h</option>
-              <option value="day">Diurno 6–18h</option>
-            </select>
-          </div>
           <div style="margin-left:auto"><span class="chip chip-t" id="wr-count">— hrs</span></div>
         </div>
         <div class="cc-body" style="display:flex;justify-content:flex-start;align-items:flex-start;padding:20px 24px 24px;gap:28px;flex-wrap:wrap">
@@ -1229,7 +1298,7 @@ canvas{display:block}
         </div>
       </div>
       <div class="chart-card">
-        <div class="cc-head"><div class="cc-title">Perfil Anual de Viento</div><div class="cc-tag">VELOCIDAD MENSUAL</div></div>
+        <div class="cc-head"><div class="cc-title">Perfil Anual de Viento</div><div class="cc-tag" id="wa-tag">VELOCIDAD MENSUAL</div></div>
         <div class="cc-body"><canvas id="wind-annual-chart" height="100"></canvas></div>
       </div>
     </div>
@@ -1240,13 +1309,59 @@ canvas{display:block}
         <div class="cc-head">
           <div class="cc-title">Análisis Mensual — Rosa de Vientos</div>
           <div style="display:flex;gap:8px;align-items:center">
-            <div class="cc-tag">12 ROSAS · ENE–DIC</div>
+            <div class="cc-tag" id="wm-tag">12 ROSAS · ENE–DIC</div>
             <div id="wm-legend" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"></div>
+          </div>
+        </div>
+        <div class="filter-row">
+          <div class="filter-group" style="min-width:250px"><span class="filter-lbl">Vista</span>
+            <select class="filter-sel" id="wm-view" onchange="drawMonthlyWindRoses()">
+              <option value="bands">Rosa: frecuencia × bandas de velocidad</option>
+              <optgroup label="Rosa matricial (tipo Ecotect): dirección × velocidad">
+                <option value="eco-freq">Matricial: frecuencia (horas)</option>
+                <option value="eco-temp">Matricial: temperatura del aire (°C)</option>
+                <option value="eco-rh">Matricial: humedad relativa (%)</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="filter-group" id="wm-stat-group" style="display:none"><span class="filter-lbl">Estadístico</span>
+            <select class="filter-sel" id="wm-stat" onchange="drawMonthlyWindRoses()">
+              <option value="mean">Media</option><option value="min">Mínima</option><option value="max">Máxima</option>
+            </select>
+          </div>
+          <div class="filter-group" id="wm-units-group" style="display:none"><span class="filter-lbl">Anillos</span>
+            <select class="filter-sel" id="wm-units" onchange="drawMonthlyWindRoses()">
+              <option value="ms">1 m/s</option><option value="kmh">5 km/h</option>
+            </select>
           </div>
         </div>
         <div class="cc-body" style="padding:16px">
           <div id="monthly-roses-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px"></div>
         </div>
+      </div>
+    </div>
+
+    <!-- PANEL: tabla resumen mes × hora -->
+    <div id="wind-panel-table" style="display:none">
+      <div class="chart-card">
+        <div class="cc-head">
+          <div class="cc-title">Tabla Resumen — Velocidad y Dirección del Viento</div>
+          <div class="cc-tag" id="wt-tag">MES × HORA</div>
+        </div>
+        <div class="filter-row">
+          <div class="filter-group"><span class="filter-lbl">Dirección</span>
+            <select class="filter-sel" id="wt-dirfmt" onchange="drawWindTable()">
+              <option value="rose">Rumbo (16 puntos)</option>
+              <option value="deg">Grados</option>
+              <option value="both">Rumbo + grados</option>
+            </select>
+          </div>
+          <div style="margin-left:auto;display:flex;gap:6px">
+            <button class="avg-btn-mini" onclick="downloadWindTableXLSX()" title="Descargar la tabla como libro de Excel con formato">↓ Excel (.xlsx)</button>
+            <button class="avg-btn-mini" onclick="downloadWindTableCSV()" title="Descargar la tabla en CSV">↓ CSV</button>
+          </div>
+        </div>
+        <div class="cc-body" id="wind-table-host"></div>
       </div>
     </div>
 
@@ -1841,7 +1956,7 @@ canvas{display:block}
 
 <!-- FOOTER -->
 <div class="footer-bar" id="footer-bar" style="display:none">
-  <div class="fi">ClimateStudio <strong style="color:var(--teal)">1.8</strong></div>
+  <div class="fi">ClimateStudio <strong style="color:var(--teal)">1.10</strong></div>
   <div class="fi">ARCHIVO: <span id="footer-file">—</span></div>
   <div class="fi">REGISTROS: <span id="footer-records">—</span></div>
   <div class="fi" style="margin-left:auto">Universidad de San Buenaventura · © 2026</div>
@@ -2570,7 +2685,7 @@ function switchTab(name){
   if(name==='givoni') drawGivoni();
   if(name==='evap'){calcEvap();calcEvapFromEPW();drawEvapPsychroFull();}
   if(name==='sunpath'){drawSunPath();drawSunShadeChart();}
-  if(name==='wind'){drawWindRose();drawWindAnnual();}
+  if(name==='wind') redrawWind();
   if(name==='groundtemp') drawGroundTemp();
   if(name==='guidelines') drawGuidelines();
   if(name==='timetable') drawTimetable();
@@ -2814,12 +2929,12 @@ function drawRainRose(){
 }
 
 function switchWindSubtab(name){
-  ['single','monthly'].forEach(n=>{
+  ['single','monthly','table'].forEach(n=>{
     document.getElementById('wind-panel-'+n).style.display=n===name?'block':'none';
     document.getElementById('wst-'+n).classList.toggle('active',n===name);
   });
-  if(name==='single'){drawWindRose();drawWindAnnual();}
-  else if(name==='monthly') drawMonthlyWindRoses();
+  _windSubtab=name;
+  redrawWind();
 }
 
 // ══════════════════════════════════════════════════════
@@ -4570,17 +4685,9 @@ const CARDINALS_16=['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSO','SO','OS
 function getWRHours(){
   if(!epwData)return[];
   const ms=parseInt(document.getElementById('wr-month').value);
-  const ps=document.getElementById('wr-period').value;
-  return epwData.hourly.filter(h=>{
-    const mOk=ms===-1||h.month===ms;
-    let pOk=true;
-    if(ps==='night')pOk=h.hour<6;
-    else if(ps==='morning')pOk=h.hour>=6&&h.hour<12;
-    else if(ps==='afternoon')pOk=h.hour>=12&&h.hour<18;
-    else if(ps==='evening')pOk=h.hour>=18;
-    else if(ps==='day')pOk=h.hour>=6&&h.hour<18;
-    return mOk&&pOk;
-  });
+  // El período horario (predefinido o personalizado) llega como máscara de 24 h
+  const mk=windHourMask();
+  return epwData.hourly.filter(h=>(ms===-1||h.month===ms)&&mk[h.hour]);
 }
 
 function computeWindRoseData(hours){
@@ -4751,9 +4858,10 @@ function drawWindRose(){
   // La rueda recorre los doce meses: el filtro de mes no le aplica
   const mg=document.getElementById('wr-month-group');
   if(mg) mg.style.display=(view==='wheel'?'none':'');
-  const pg=document.getElementById('wr-period-group');
-  if(pg) pg.style.display=(view==='wheel'?'none':'');
+  const eo=ecoOpts('wr');
+  canvas._eco=null;ecoHide();
   if(view==='wheel'){ drawWindWheelOn(canvas); return; }
+  if(eo.isEco){ drawEcoSingle(canvas,eo); return; }
   canvas.width=520;canvas.height=520;
   const hrs=getWRHours();
   drawWindRoseCanvas(canvas,hrs,{showLegend:true,mini:false,metric:view});
@@ -4765,17 +4873,30 @@ function drawMonthlyWindRoses(){
   grid.innerHTML='';
   // Build legend once at top
   const legendEl=document.getElementById('wm-legend');
-  legendEl.innerHTML=SPEED_BANDS.map(b=>`<span style="display:inline-flex;align-items:center;gap:4px;font-family:var(--font-m);font-size:9px;color:#334155">
+  const eo=ecoOpts('wm');
+  ecoHide();
+  legendEl.innerHTML=eo.isEco?'':SPEED_BANDS.map(b=>`<span style="display:inline-flex;align-items:center;gap:4px;font-family:var(--font-m);font-size:9px;color:#334155">
     <span style="width:10px;height:10px;border-radius:2px;background:${b.col};display:inline-block;border:1px solid #aab"></span>${b.label.split(' ')[0]}</span>`).join('');
 
+  const _wmHours=windHours();
+  const _wmTag=document.getElementById('wm-tag');
+  if(_wmTag) _wmTag.textContent='12 ROSAS · ENE–DIC · '+windPeriodLabel().toUpperCase();
+  // Modo matricial: las 12 rosas comparten anillos de velocidad y escala de color
+  let _ecoNb=0,_ecoGrids=null,_ecoScale=null;
+  if(eo.isEco){
+    _ecoNb=ecoBins(_wmHours,eo.units);
+    _ecoGrids=MONTHS_F.map((_,mi)=>computeEcoGrid(_wmHours.filter(h=>h.month===mi),eo.varKey,eo.stat,eo.units,_ecoNb));
+    _ecoScale=ecoScale(_ecoGrids,eo.varKey);
+    legendEl.innerHTML=`<span style="font-family:var(--font-m);font-size:9px;color:#334155;letter-spacing:.5px;text-transform:uppercase">${ecoVarTitle(eo)} · anillos de ${eo.units==='kmh'?'5 km/h':'1 m/s'}</span>`+ecoLegendHtml(eo,_ecoScale,true);
+  }
   MONTHS_F.forEach((mname,mi)=>{
     const cell=document.createElement('div');
     cell.className='mrose-cell';
-    const hrs=epwData.hourly.filter(h=>h.month===mi);
+    const hrs=_wmHours.filter(h=>h.month===mi);
     const spdVals=hrs.map(h=>h.windSpd);
     const avgSpd=avg(spdVals).toFixed(1);
     const calm=hrs.filter(h=>h.windSpd<1).length;
-    const calmPct=(calm/hrs.length*100).toFixed(0);
+    const calmPct=(hrs.length?calm/hrs.length*100:0).toFixed(0);
     cell.innerHTML=`<div class="mrose-name">${mname}</div>`;
     const canvas=document.createElement('canvas');
     canvas.width=220;canvas.height=220;
@@ -4785,15 +4906,643 @@ function drawMonthlyWindRoses(){
     // por uno nuevo y vacío: las 12 rosas mensuales salían en blanco.
     const statsEl=document.createElement('div');
     statsEl.className='mrose-stats';
-    statsEl.textContent=`Media: ${avgSpd} m/s · Calma: ${calmPct}%`;
+    statsEl.textContent=!eo.isEco||eo.varKey==='freq'?`Media: ${avgSpd} m/s · Calma: ${calmPct}%`
+      :eo.varKey==='temp'?`Temp. media: ${avg(hrs.map(h=>h[0])).toFixed(1)} °C · Viento: ${avgSpd} m/s`
+      :`HR media: ${avg(hrs.map(h=>h[2])).toFixed(0)} % · Viento: ${avgSpd} m/s`;
     cell.appendChild(statsEl);
     grid.appendChild(cell);
     // Render after DOM insert
     requestAnimationFrame(()=>{
       canvas.width=220;canvas.height=220;
-      drawWindRoseCanvas(canvas,hrs,{showLegend:false,mini:true});
+      if(eo.isEco) drawEcoRose(canvas,_ecoGrids[mi],{...eo,nb:_ecoNb,scale:_ecoScale,mini:true,title:mname});
+      else drawWindRoseCanvas(canvas,hrs,{showLegend:false,mini:true});
     });
   });
+}
+
+
+// ══════════════════════════════════════════════════════════════════
+// VIENTO — PERÍODO HORARIO DE ANÁLISIS
+// ──────────────────────────────────────────────────────────────────
+// Un único selector de período gobierna todas las vistas de la pestaña
+// (rosa, rueda anual, perfil mensual, 12 rosas y tabla resumen). Además
+// de los tramos predefinidos admite un período PERSONALIZADO: cualquier
+// combinación de las 24 horas, contigua o no (p. ej. 08–12 + 14–18), o
+// un tramo que cruza la medianoche (p. ej. 22–06).
+// Convención: la hora h cubre el intervalo h:00–(h+1):00, igual que el
+// EPW (su hora 1 es 00:00–01:00).
+// ══════════════════════════════════════════════════════════════════
+const WIND_PRESETS={all:[0,24],night:[0,6],morning:[6,12],afternoon:[12,18],evening:[18,24],day:[6,18]};
+let WIND_CUSTOM=Array.from({length:24},(_,h)=>h>=8&&h<18);
+let _windSubtab='single';
+let _wpPaint=null;   // valor que se está «pintando» al arrastrar sobre las horas
+try{
+  const s=JSON.parse(localStorage.getItem('cs-wind-custom')||'null');
+  if(Array.isArray(s)&&s.length===24&&s.some(Boolean)) WIND_CUSTOM=s.map(Boolean);
+}catch(e){}
+
+const hh=h=>String(h).padStart(2,'0')+':00';
+const escHtml=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function windPeriodMode(){const el=document.getElementById('wr-period');return el?el.value:'all';}
+
+// Máscara de 24 booleanos con las horas incluidas en el análisis
+function windHourMask(){
+  const m=windPeriodMode();
+  if(m==='custom') return WIND_CUSTOM.slice();
+  const [a,b]=WIND_PRESETS[m]||WIND_PRESETS.all;
+  return Array.from({length:24},(_,h)=>h>=a&&h<b);
+}
+
+// Registros horarios del EPW que caen dentro del período activo
+function windHours(){
+  if(!epwData) return [];
+  const mk=windHourMask();
+  return epwData.hourly.filter(h=>mk[h.hour]);
+}
+
+// Tramos contiguos [inicio,fin) de una máscara; une el que cruza la medianoche
+function windPeriodRuns(mask){
+  const runs=[];let s=-1;
+  for(let h=0;h<=24;h++){
+    if(h<24&&mask[h]){if(s<0)s=h;}
+    else if(s>=0){runs.push([s,h]);s=-1;}
+  }
+  if(runs.length>1&&runs[0][0]===0&&runs[runs.length-1][1]===24){
+    const last=runs.pop(), first=runs.shift();
+    runs.push([last[0],first[1]]);
+  }
+  return runs;
+}
+function windPeriodLabel(mask){
+  mask=mask||windHourMask();
+  const n=mask.filter(Boolean).length;
+  if(n===24) return 'Todo el día (00:00–24:00)';
+  if(n===0) return 'Sin horas';
+  return windPeriodRuns(mask).map(([a,b])=>hh(a)+'–'+hh(b)).join(' + ');
+}
+
+function buildWindPeriodUI(){
+  const h0=document.getElementById('wp-h0'), h1=document.getElementById('wp-h1'), box=document.getElementById('wp-chips');
+  if(!h0||!h1||!box) return;
+  h0.innerHTML=Array.from({length:24},(_,h)=>`<option value="${h}">${hh(h)}</option>`).join('');
+  h1.innerHTML=Array.from({length:24},(_,h)=>`<option value="${h+1}">${hh(h+1)}</option>`).join('');
+  box.innerHTML=Array.from({length:24},(_,h)=>
+    `<button type="button" class="wp-chip" data-h="${h}" title="${hh(h)}–${hh(h+1)}" onmousedown="windChipDown(${h},event)" onmouseenter="windChipEnter(${h})" onkeydown="if(event.key===' '||event.key==='Enter'){event.preventDefault();windChipDown(${h});_wpPaint=null;}">${String(h).padStart(2,'0')}</button>`).join('');
+  document.addEventListener('mouseup',()=>{_wpPaint=null;});
+  syncWindPeriodUI();
+}
+
+function syncWindPeriodUI(){
+  const custom=windPeriodMode()==='custom';
+  const cb=document.getElementById('wp-custom');
+  if(cb) cb.style.display=custom?'flex':'none';
+  const mask=windHourMask();
+  document.querySelectorAll('#wp-chips .wp-chip').forEach(b=>b.classList.toggle('on',!!WIND_CUSTOM[+b.dataset.h]));
+  // Desde/Hasta reflejan el período sólo cuando es un único tramo
+  const runs=windPeriodRuns(WIND_CUSTOM);
+  const h0=document.getElementById('wp-h0'), h1=document.getElementById('wp-h1');
+  if(h0&&h1&&runs.length===1&&WIND_CUSTOM.some(v=>!v)){h0.value=runs[0][0];h1.value=runs[0][1];}
+  const sm=document.getElementById('wp-summary');
+  if(sm) sm.textContent=mask.filter(Boolean).length+' h/día · '+windPeriodLabel(mask);
+}
+
+function saveWindCustom(){try{localStorage.setItem('cs-wind-custom',JSON.stringify(WIND_CUSTOM));}catch(e){}}
+
+function onWindPeriodChange(){syncWindPeriodUI();redrawWind();}
+
+// Desde/Hasta: tramo continuo; si Hasta ≤ Desde, cruza la medianoche
+function setWindRange(){
+  const a=parseInt(document.getElementById('wp-h0').value), b=parseInt(document.getElementById('wp-h1').value);
+  WIND_CUSTOM=Array.from({length:24},(_,h)=>a<b?(h>=a&&h<b):(h>=a||h<b));
+  saveWindCustom();syncWindPeriodUI();redrawWind();
+}
+function applyWindChip(h,val){
+  if(WIND_CUSTOM[h]===val) return;
+  // El período no puede quedar vacío: no se desmarca la última hora
+  if(!val&&WIND_CUSTOM.filter(Boolean).length<=1) return;
+  WIND_CUSTOM[h]=val;
+  saveWindCustom();syncWindPeriodUI();redrawWind();
+}
+function windChipDown(h,ev){
+  if(ev) ev.preventDefault();
+  _wpPaint=!WIND_CUSTOM[h];
+  applyWindChip(h,_wpPaint);
+}
+function windChipEnter(h){if(_wpPaint!==null) applyWindChip(h,_wpPaint);}
+function invertWindHours(){
+  const inv=WIND_CUSTOM.map(v=>!v);
+  if(!inv.some(Boolean)) return;
+  WIND_CUSTOM=inv;
+  saveWindCustom();syncWindPeriodUI();redrawWind();
+}
+
+// Redibuja la sub-pestaña de viento que esté a la vista
+function redrawWind(){
+  if(!epwData) return;
+  if(_windSubtab==='monthly') drawMonthlyWindRoses();
+  else if(_windSubtab==='table') drawWindTable();
+  else {drawWindRose();drawWindAnnual();}
+}
+
+// ══════════════════════════════════════════════════════════════════
+// VIENTO — TABLA RESUMEN MES × HORA
+// ──────────────────────────────────────────────────────────────────
+// Reproduce la hoja «Velocidad y dirección»: por cada mes y cada hora,
+//  · velocidad: media aritmética de TODOS los registros (calmas incluidas);
+//  · dirección: media circular de los registros con viento (velocidad > 0),
+//    expresada como rumbo de 16 puntos. Sin registros con viento → «Sin viento».
+// La fila «Promedio anual» y la columna «Promedio período» se calculan
+// sobre los registros horarios, no como media de medias, de modo que cada
+// hora del archivo pesa lo mismo.
+// ══════════════════════════════════════════════════════════════════
+const WT_TITLE='VELOCIDAD Y DIRECCIÓN PROMEDIO DEL VIENTO POR MES Y HORA';
+const WT_NOTE='Velocidad en m/s. Dirección: media circular de los registros con viento (horas con velocidad > 0); N=0°, E=90°, S=180°, O=270°.';
+
+function computeWindSummary(){
+  if(!epwData) return null;
+  const mask=windHourMask();
+  const hours=[];for(let h=0;h<24;h++) if(mask[h]) hours.push(h);
+  const mk=()=>({n:0,s:0,x:0,y:0,nd:0});
+  // acc[fila][columna]: filas 0–11 = meses, 12 = año; columnas 0–23 = horas, 24 = período
+  const acc=Array.from({length:13},()=>Array.from({length:25},mk));
+  for(const r of epwData.hourly){
+    const m=r.month,h=r.hour,v=r.windSpd;
+    if(!(m>=0&&m<12&&h>=0&&h<24)||!mask[h]||v==null||isNaN(v)) continue;
+    const withWind=v>0&&r.windDir!=null&&!isNaN(r.windDir);
+    const a=withWind?r.windDir*Math.PI/180:0, sx=Math.sin(a), cy=Math.cos(a);
+    for(const c of [acc[m][h],acc[m][24],acc[12][h],acc[12][24]]){
+      c.n++;c.s+=v;
+      if(withWind){c.nd++;c.x+=sx;c.y+=cy;}
+    }
+  }
+  const fin=c=>{
+    let deg=null;
+    if(c.nd){deg=Math.atan2(c.x,c.y)*180/Math.PI;if(deg<0)deg+=360;if(deg>=359.9995)deg=0;}
+    return {spd:c.n?c.s/c.n:null,deg,n:c.n,nd:c.nd};
+  };
+  return {mask,hours,cells:acc.map(row=>row.map(fin))};
+}
+
+function windCompass(deg){return CARDINALS_16[Math.round(deg/22.5)%16];}
+function windDirText(cell,fmt){
+  if(cell.n===0) return '—';
+  if(cell.deg==null) return 'Sin viento';
+  if(fmt==='deg') return Math.round(cell.deg)%360+'°';
+  if(fmt==='both') return windCompass(cell.deg)+' '+(Math.round(cell.deg)%360)+'°';
+  return windCompass(cell.deg);
+}
+function windSourceLine(){
+  const p=['Fuente: '+(epwData.filename||'archivo EPW')];
+  if(epwData.city) p.push(epwData.city);
+  const wmo=epwData.rawHeader&&epwData.rawHeader[0]?(epwData.rawHeader[0].split(',')[5]||'').trim():'';
+  if(wmo) p.push('WMO '+wmo);
+  if(epwData.source) p.push(epwData.source);
+  return p.join(' | ');
+}
+function windTableNote(sum){
+  return WT_NOTE+(sum.hours.length<24?' Período de análisis: '+windPeriodLabel(sum.mask)+' ('+sum.hours.length+' h/día).':'');
+}
+function windDirFmt(){const el=document.getElementById('wt-dirfmt');return el?el.value:'rose';}
+function windPeriodColTitle(sum){return sum.hours.length===24?'Promedio diario':'Promedio período';}
+
+function drawWindTable(){
+  const host=document.getElementById('wind-table-host');
+  if(!host||!epwData) return;
+  const sum=computeWindSummary(), fmt=windDirFmt();
+  const tag=document.getElementById('wt-tag');
+  if(tag) tag.textContent='MES × HORA · '+windPeriodLabel(sum.mask).toUpperCase();
+  const cols=sum.hours.concat([24]);
+  const cellHtml=(c,isPer)=>{
+    const tip=c.n?`${c.n} registros · ${c.nd} con viento`+(c.deg!=null?` · dirección media ${c.deg.toFixed(0)}°`:''):'Sin registros';
+    const k=isPer?' wt-per':'';
+    return `<td class="wt-spd${k}" title="${tip}">${c.spd==null?'—':c.spd.toFixed(2)}</td><td class="wt-dir${k}" title="${tip}">${windDirText(c,fmt)}</td>`;
+  };
+  const rowHtml=(label,ri,cls)=>`<tr class="${cls}"><th>${label}</th>${cols.map(h=>cellHtml(sum.cells[ri][h],h===24)).join('')}</tr>`;
+  host.innerHTML=`
+    <div class="wt-title">${WT_TITLE}</div>
+    <div class="wt-src">${escHtml(windSourceLine())}</div>
+    <div class="wt-note">${escHtml(windTableNote(sum))}</div>
+    <div class="wt-wrap"><table class="wt-table">
+      <thead>
+        <tr><th rowspan="2" class="wt-corner">Mes</th>${sum.hours.map(h=>`<th colspan="2">${hh(h)}–${hh(h+1)}</th>`).join('')}<th colspan="2" class="wt-per">${windPeriodColTitle(sum)}</th></tr>
+        <tr>${cols.map(h=>`<th class="wt-sub${h===24?' wt-per':''}">m/s</th><th class="wt-sub${h===24?' wt-per':''}">Dirección</th>`).join('')}</tr>
+      </thead>
+      <tbody>
+        ${MONTHS_F.map((mn,mi)=>rowHtml(mn,mi,mi%2?'wt-b':'wt-a')).join('')}
+        ${rowHtml('Promedio anual',12,'wt-annual')}
+      </tbody>
+    </table></div>`;
+}
+
+function windSafeName(){
+  return (epwData.city||'estacion').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-zA-Z0-9_-]+/g,'_').replace(/^_+|_+$/g,'')||'estacion';
+}
+function windFileSuffix(sum){
+  return sum.hours.length===24?'':'_'+windPeriodRuns(sum.mask).map(([a,b])=>String(a).padStart(2,'0')+'-'+String(b).padStart(2,'0')+'h').join('_');
+}
+function downloadBlob(blob,name){
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);a.download=name;
+  document.body.appendChild(a);a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);
+}
+
+function downloadWindTableCSV(){
+  if(!epwData) return;
+  const sum=computeWindSummary(), fmt=windDirFmt();
+  const cols=sum.hours.concat([24]);
+  const q=s=>/[",\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;
+  const lines=[
+    '# '+WT_TITLE,
+    '# '+windSourceLine(),
+    '# '+windTableNote(sum),
+    ['Mes'].concat(cols.flatMap(h=>{
+      const t=h===24?windPeriodColTitle(sum):hh(h)+'–'+hh(h+1);
+      return [t+' (m/s)',t+' (Dirección)'];
+    })).map(q).join(',')
+  ];
+  const row=(label,ri)=>[label].concat(cols.flatMap(h=>{
+    const c=sum.cells[ri][h];
+    return [c.spd==null?'':c.spd.toFixed(2),windDirText(c,fmt)];
+  })).map(q).join(',');
+  MONTHS_F.forEach((mn,mi)=>lines.push(row(mn,mi)));
+  lines.push(row('Promedio anual',12));
+  // BOM para que Excel reconozca los acentos
+  downloadBlob(new Blob(['﻿'+lines.join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'}),
+    `Velocidad_direccion_viento_${windSafeName()}${windFileSuffix(sum)}.csv`);
+}
+
+// ── Escritor XLSX mínimo, sin dependencias ─────────────────────────
+// Un .xlsx es un ZIP de XML. Se generan las seis partes imprescindibles y
+// se empaquetan sin compresión (método «stored»), que sólo exige el CRC-32.
+// Así la exportación funciona sin red y sin sumar una librería al HTML.
+const _CRC_T=(()=>{const t=new Uint32Array(256);for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0;}return t;})();
+function crc32(u8){let c=0xFFFFFFFF;for(let i=0;i<u8.length;i++)c=_CRC_T[(c^u8[i])&0xFF]^(c>>>8);return (c^0xFFFFFFFF)>>>0;}
+function zipStore(files){
+  const enc=new TextEncoder(), parts=[], central=[];
+  let offset=0;
+  const d=new Date();
+  const dosT=(d.getHours()<<11)|(d.getMinutes()<<5)|(d.getSeconds()>>1);
+  const dosD=((d.getFullYear()-1980)<<9)|((d.getMonth()+1)<<5)|d.getDate();
+  for(const f of files){
+    const name=enc.encode(f.name), data=enc.encode(f.data), crc=crc32(data);
+    const lh=new DataView(new ArrayBuffer(30));
+    lh.setUint32(0,0x04034b50,true);lh.setUint16(4,20,true);lh.setUint16(6,0x0800,true);lh.setUint16(8,0,true);
+    lh.setUint16(10,dosT,true);lh.setUint16(12,dosD,true);lh.setUint32(14,crc,true);
+    lh.setUint32(18,data.length,true);lh.setUint32(22,data.length,true);lh.setUint16(26,name.length,true);lh.setUint16(28,0,true);
+    parts.push(new Uint8Array(lh.buffer),name,data);
+    const ch=new DataView(new ArrayBuffer(46));
+    ch.setUint32(0,0x02014b50,true);ch.setUint16(4,20,true);ch.setUint16(6,20,true);ch.setUint16(8,0x0800,true);ch.setUint16(10,0,true);
+    ch.setUint16(12,dosT,true);ch.setUint16(14,dosD,true);ch.setUint32(16,crc,true);
+    ch.setUint32(20,data.length,true);ch.setUint32(24,data.length,true);ch.setUint16(28,name.length,true);
+    ch.setUint32(42,offset,true);
+    central.push(new Uint8Array(ch.buffer),name);
+    offset+=30+name.length+data.length;
+  }
+  const cSize=central.reduce((a,p)=>a+p.length,0);
+  const end=new DataView(new ArrayBuffer(22));
+  end.setUint32(0,0x06054b50,true);end.setUint16(8,files.length,true);end.setUint16(10,files.length,true);
+  end.setUint32(12,cSize,true);end.setUint32(16,offset,true);
+  return new Blob(parts.concat(central,[new Uint8Array(end.buffer)]),
+    {type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+}
+function xlsxCol(i){let s='';i++;while(i>0){const r=(i-1)%26;s=String.fromCharCode(65+r)+s;i=(i-1-r)/26;}return s;}
+
+// Estilos de la hoja: misma paleta turquesa que el Excel de referencia
+const WT_XLSX_STYLES=(()=>{
+  const font=(sz,color,b,i)=>`<font>${b?'<b/>':''}${i?'<i/>':''}<sz val="${sz}"/><color rgb="FF${color}"/><name val="Calibri"/><family val="2"/></font>`;
+  const fill=c=>`<fill><patternFill patternType="solid"><fgColor rgb="FF${c}"/><bgColor indexed="64"/></patternFill></fill>`;
+  const side=t=>`<${t} style="thin"><color rgb="FFB7DEDC"/></${t}>`;
+  const xf=(f,fl,num,al)=>`<xf numFmtId="${num||0}" fontId="${f}" fillId="${fl}" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1"${num?' applyNumberFormat="1"':''} applyAlignment="1">${al}</xf>`;
+  const C='<alignment horizontal="center" vertical="center"/>', CW='<alignment horizontal="center" vertical="center" wrapText="1"/>',
+        L='<alignment horizontal="left" vertical="center"/>', LW='<alignment horizontal="left" vertical="top" wrapText="1"/>';
+  const fonts=[font(8,'174F52'),font(14,'FFFFFF',1),font(10,'245B63',0,1),font(9,'245B63'),font(8,'FFFFFF',1),font(11,'07575B',1),font(8,'07575B',1)];
+  const fills=['<fill><patternFill patternType="none"/></fill>','<fill><patternFill patternType="gray125"/></fill>']
+    .concat(['087E8B','159A9C','42BFC0','DDF6F5','F0FBFA','E3F6F5','BFEDEF'].map(fill));
+  const xfs=[
+    '<xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>',
+    xf(1,2,0,C),   // 1 título
+    xf(2,0,0,L),   // 2 fuente
+    xf(3,0,0,LW),  // 3 nota
+    xf(4,3,0,CW),  // 4 encabezado de hora
+    xf(4,4,0,CW),  // 5 sub-encabezado m/s · Dirección
+    xf(5,5,0,L),   // 6 nombre de mes
+    xf(0,6,2,C),   // 7 dato, banda A, número
+    xf(0,6,0,C),   // 8 dato, banda A, texto
+    xf(0,7,2,C),   // 9 dato, banda B, número
+    xf(0,7,0,C),   // 10 dato, banda B, texto
+    xf(5,8,0,L),   // 11 «Promedio anual»
+    xf(6,8,2,C),   // 12 resumen, número
+    xf(6,8,0,C),   // 13 resumen, texto
+  ];
+  return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'+
+    '<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'+
+    `<fonts count="${fonts.length}">${fonts.join('')}</fonts>`+
+    `<fills count="${fills.length}">${fills.join('')}</fills>`+
+    `<borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border>${side('left')}${side('right')}${side('top')}${side('bottom')}<diagonal/></border></borders>`+
+    '<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>'+
+    `<cellXfs count="${xfs.length}">${xfs.join('')}</cellXfs>`+
+    '<cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>'+
+    '</styleSheet>';
+})();
+
+function downloadWindTableXLSX(){
+  if(!epwData) return;
+  const sum=computeWindSummary(), fmt=windDirFmt();
+  const cols=sum.hours.concat([24]);
+  const nCols=1+cols.length*2, lastCol=xlsxCol(nCols-1);
+  const x=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  const S=(ref,style,text)=>text===''||text==null?`<c r="${ref}" s="${style}"/>`:`<c r="${ref}" s="${style}" t="inlineStr"><is><t xml:space="preserve">${x(text)}</t></is></c>`;
+  const N=(ref,style,num)=>`<c r="${ref}" s="${style}"><v>${num}</v></c>`;
+  const rows=[], merges=[];
+  // Filas 1–3: título, fuente y nota, combinadas a todo el ancho
+  const note=windTableNote(sum);
+  [[1,1,WT_TITLE,18.75],[2,2,windSourceLine(),15],[3,3,note,note.length>150?26:14]].forEach(([r,st,text,ht])=>{
+    let cs=S('A'+r,st,text);
+    for(let c=1;c<nCols;c++) cs+=S(xlsxCol(c)+r,st,'');
+    rows.push(`<row r="${r}" ht="${ht}" customHeight="1">${cs}</row>`);
+    merges.push(`A${r}:${lastCol}${r}`);
+  });
+  // Filas 5–6: encabezado doble
+  let r5=S('A5',4,'Mes'), r6=S('A6',4,'');
+  merges.push('A5:A6');
+  cols.forEach((h,i)=>{
+    const c1=xlsxCol(1+i*2), c2=xlsxCol(2+i*2);
+    r5+=S(c1+'5',4,h===24?windPeriodColTitle(sum):hh(h)+'–'+hh(h+1))+S(c2+'5',4,'');
+    r6+=S(c1+'6',5,'m/s')+S(c2+'6',5,'Dirección');
+    merges.push(`${c1}5:${c2}5`);
+  });
+  rows.push(`<row r="5" ht="27.95" customHeight="1">${r5}</row>`,`<row r="6" ht="27.95" customHeight="1">${r6}</row>`);
+  // Filas de datos: 12 meses + promedio anual
+  const dataRow=(r,label,ri,annual)=>{
+    const band=(ri%2===0)?[7,8]:[9,10];
+    let cs=S('A'+r,annual?11:6,label);
+    cols.forEach((h,i)=>{
+      const c=sum.cells[ri][h], st=(annual||h===24)?[12,13]:band;
+      const c1=xlsxCol(1+i*2)+r, c2=xlsxCol(2+i*2)+r;
+      cs+=(c.spd==null?S(c1,st[1],'—'):N(c1,st[0],c.spd))+S(c2,st[1],windDirText(c,fmt));
+    });
+    return `<row r="${r}">${cs}</row>`;
+  };
+  MONTHS_F.forEach((mn,mi)=>rows.push(dataRow(7+mi,mn,mi,false)));
+  rows.push(dataRow(19,'Promedio anual',12,true));
+
+  let colsXml='<col min="1" max="1" width="18" customWidth="1"/>';
+  cols.forEach((h,i)=>{
+    colsXml+=`<col min="${2+i*2}" max="${2+i*2}" width="10" customWidth="1"/><col min="${3+i*2}" max="${3+i*2}" width="${fmt==='both'?14:12}" customWidth="1"/>`;
+  });
+  const sheet='<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'+
+    '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'+
+    `<dimension ref="A1:${lastCol}19"/>`+
+    '<sheetViews><sheetView showGridLines="0" workbookViewId="0"><pane xSplit="1" ySplit="6" topLeftCell="B7" activePane="bottomRight" state="frozen"/><selection pane="bottomRight" activeCell="B7" sqref="B7"/></sheetView></sheetViews>'+
+    '<sheetFormatPr defaultRowHeight="15"/>'+
+    `<cols>${colsXml}</cols>`+
+    `<sheetData>${rows.join('')}</sheetData>`+
+    `<mergeCells count="${merges.length}">${merges.map(m=>`<mergeCell ref="${m}"/>`).join('')}</mergeCells>`+
+    '<pageMargins left="0.5" right="0.5" top="0.5" bottom="0.5" header="0.3" footer="0.3"/>'+
+    '<pageSetup orientation="landscape" fitToWidth="1" fitToHeight="0"/>'+
+    '</worksheet>';
+  const H='<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
+  const blob=zipStore([
+    {name:'[Content_Types].xml',data:H+'<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>'},
+    {name:'_rels/.rels',data:H+'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>'},
+    {name:'xl/workbook.xml',data:H+'<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="Velocidad y dirección" sheetId="1" r:id="rId1"/></sheets></workbook>'},
+    {name:'xl/_rels/workbook.xml.rels',data:H+'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>'},
+    {name:'xl/styles.xml',data:WT_XLSX_STYLES},
+    {name:'xl/worksheets/sheet1.xml',data:sheet},
+  ]);
+  downloadBlob(blob,`Velocidad_direccion_viento_${windSafeName()}${windFileSuffix(sum)}.xlsx`);
+}
+
+buildWindPeriodUI();
+
+
+// ══════════════════════════════════════════════════════════════════
+// VIENTO — ROSA MATRICIAL (tipo Ecotect «Prevailing Winds»)
+// ──────────────────────────────────────────────────────────────────
+// La rosa clásica responde «de dónde y con qué fuerza sopla». La rosa
+// matricial añade «qué aire trae»: divide el plano polar en celdas de
+// dirección (16 rumbos) × velocidad (anillos de 1 m/s o 5 km/h) y colorea
+// cada celda con una variable de las horas que caen en ella:
+//  · frecuencia  → nº de horas;
+//  · temperatura → media, mínima o máxima del bulbo seco;
+//  · humedad     → media, mínima o máxima de la humedad relativa.
+// Las horas sin viento (velocidad 0) no tienen dirección: quedan fuera de
+// la matriz y se informan aparte como calmas.
+// Todas las rosas de una misma vista comparten escala radial y de color,
+// de modo que las 12 mensuales son comparables entre sí.
+// ══════════════════════════════════════════════════════════════════
+const ECO_VARS={
+  freq:{label:'Frecuencia',unit:'h',dec:0,round:1,
+        pal:['#e8eef9','#b3cef0','#7aaddf','#3f83c4','#1a4f7e','#0d2b4e']},
+  temp:{label:'Temperatura del aire',unit:'°C',dec:1,idx:0,round:1,
+        pal:['#1e3a8a','#6d28d9','#b91c5c','#ef4444','#f97316','#facc15']},
+  rh:  {label:'Humedad relativa',unit:'%',dec:0,idx:2,round:5,
+        pal:['#f7fcb9','#c2e699','#78c679','#31a354','#00796b','#004d6b']}
+};
+const ECO_STATS={mean:'media',min:'mínima',max:'máxima'};
+
+function ecoColor(pal,t){
+  t=Math.max(0,Math.min(1,isFinite(t)?t:0));
+  const x=t*(pal.length-1), i=Math.min(pal.length-2,Math.floor(x)), f=x-i;
+  const p=h=>[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)];
+  const a=p(pal[i]), b=p(pal[i+1]);
+  return `rgb(${Math.round(lerp(a[0],b[0],f))},${Math.round(lerp(a[1],b[1],f))},${Math.round(lerp(a[2],b[2],f))})`;
+}
+// Ancho del anillo de velocidad, en m/s
+function ecoBinWidth(units){return units==='kmh'?5/3.6:1;}
+function ecoSpeedLabel(bi,units){
+  return units==='kmh'?`${bi*5}–${bi*5+5} km/h`:`${bi}–${bi+1} m/s`;
+}
+
+// Matriz [16 direcciones][nb anillos] con el valor de la variable en cada celda
+function computeEcoGrid(hours,varKey,stat,units,nb){
+  const bw=ecoBinWidth(units), meta=ECO_VARS[varKey];
+  const acc=Array.from({length:N_DIRS},()=>Array.from({length:nb},()=>null));
+  let calm=0;
+  for(const h of hours){
+    const v=h.windSpd;
+    if(!(v>0)||h.windDir==null||isNaN(h.windDir)){calm++;continue;}
+    const di=Math.round(h.windDir/(360/N_DIRS))%N_DIRS;
+    const bi=Math.min(nb-1,Math.floor(v/bw+1e-9));
+    const x=varKey==='freq'?1:h[meta.idx];
+    if(x==null||isNaN(x)) continue;
+    const c=acc[di][bi]||(acc[di][bi]={n:0,s:0,mn:Infinity,mx:-Infinity});
+    c.n++;c.s+=x;if(x<c.mn)c.mn=x;if(x>c.mx)c.mx=x;
+  }
+  const val=c=>c==null?null:varKey==='freq'?c.n:stat==='min'?c.mn:stat==='max'?c.mx:c.s/c.n;
+  return {grid:acc.map(r=>r.map(val)),count:acc.map(r=>r.map(c=>c?c.n:0)),calm,total:hours.length};
+}
+
+// Nº de anillos necesario para cubrir la velocidad máxima de un conjunto de horas
+function ecoBins(hours,units){
+  let mx=0;for(const h of hours) if(h.windSpd>mx) mx=h.windSpd;
+  return Math.max(4,Math.ceil(mx/ecoBinWidth(units)+1e-9));
+}
+// Rango de color «redondo» que cubre los valores de una o varias matrices
+function ecoScale(grids,varKey){
+  let lo=Infinity,hi=-Infinity;
+  grids.forEach(g=>g.grid.forEach(r=>r.forEach(v=>{if(v!=null){if(v<lo)lo=v;if(v>hi)hi=v;}})));
+  if(!isFinite(lo)) return [0,1];
+  if(varKey==='freq') return [0,Math.max(1,hi)];
+  const q=ECO_VARS[varKey].round;
+  lo=Math.floor(lo/q)*q;hi=Math.ceil(hi/q)*q;
+  if(hi<=lo) hi=lo+q;
+  return [lo,hi];
+}
+
+function drawEcoRose(canvas,eco,o){
+  const W=canvas.width,H=canvas.height,cx=W/2,cy=H/2;
+  const mini=!!o.mini, meta=ECO_VARS[o.varKey];
+  const R=Math.min(cx,cy)-(mini?20:36), r0=R*0.07, nb=o.nb, dr=(R-r0)/nb;
+  const ctx=canvas.getContext('2d');
+  ctx.clearRect(0,0,W,H);ctx.fillStyle='#fff';ctx.fillRect(0,0,W,H);
+  const [lo,hi]=o.scale;
+  const halfA=Math.PI/N_DIRS, gap=mini?0.012:0.008;
+  // Celdas
+  for(let di=0;di<N_DIRS;di++){
+    const a=(di*360/N_DIRS-90)*Math.PI/180;
+    for(let bi=0;bi<nb;bi++){
+      const v=eco.grid[di][bi];
+      if(v==null) continue;
+      const ri=r0+bi*dr, ro=ri+dr;
+      ctx.beginPath();
+      ctx.arc(cx,cy,ro,a-halfA+gap,a+halfA-gap);
+      ctx.arc(cx,cy,ri,a+halfA-gap,a-halfA+gap,true);
+      ctx.closePath();
+      ctx.fillStyle=ecoColor(meta.pal,(v-lo)/(hi-lo));ctx.fill();
+      ctx.strokeStyle='rgba(255,255,255,.75)';ctx.lineWidth=mini?.4:.6;ctx.stroke();
+    }
+  }
+  // Anillos de velocidad
+  const perRing=o.units==='kmh'?5:1;
+  let step=2;while(nb/step>6) step*=2;
+  ctx.setLineDash([3,3]);ctx.strokeStyle='#64748b';ctx.lineWidth=mini?.5:.7;
+  for(let bi=step;bi<=nb;bi+=step){
+    ctx.beginPath();ctx.arc(cx,cy,r0+bi*dr,0,Math.PI*2);ctx.stroke();
+  }
+  ctx.setLineDash([]);
+  ctx.strokeStyle='#94a3b8';ctx.lineWidth=mini?.6:.9;
+  ctx.beginPath();ctx.arc(cx,cy,R,0,Math.PI*2);ctx.stroke();
+  ctx.beginPath();ctx.arc(cx,cy,r0,0,Math.PI*2);ctx.stroke();
+  // Ejes N–S y E–O
+  ctx.strokeStyle='rgba(51,65,85,.55)';ctx.lineWidth=.6;
+  ctx.beginPath();ctx.moveTo(cx-R,cy);ctx.lineTo(cx-r0,cy);ctx.moveTo(cx+r0,cy);ctx.lineTo(cx+R,cy);
+  ctx.moveTo(cx,cy-R);ctx.lineTo(cx,cy-r0);ctx.moveTo(cx,cy+r0);ctx.lineTo(cx,cy+R);ctx.stroke();
+  // Rótulos de velocidad sobre el eje norte
+  ctx.font=(mini?'6px':'8px')+' DM Mono';ctx.textAlign='center';ctx.textBaseline='middle';
+  for(let bi=step;bi<=nb;bi+=step){
+    const txt=(bi*perRing)+(mini?'':(o.units==='kmh'?' km/h':' m/s')), y=cy-(r0+bi*dr);
+    const w=ctx.measureText(txt).width+4;
+    ctx.fillStyle='rgba(255,255,255,.85)';ctx.fillRect(cx-w/2,y-(mini?4:5),w,mini?8:10);
+    ctx.fillStyle='#334155';ctx.fillText(txt,cx,y);
+  }
+  // Rumbos
+  for(let i=0;i<N_DIRS;i++){
+    const isMain=i%4===0,isSemi=i%2===0;
+    if(mini&&!isMain) continue;
+    const a=(i*360/N_DIRS-90)*Math.PI/180, lr=R+(mini?10:isMain?18:isSemi?14:11);
+    ctx.fillStyle=isMain?'#1a2533':isSemi?'#3d5166':'#94a3b8';
+    ctx.font=mini?'bold 8px Barlow':isMain?'bold 11px Barlow':isSemi?'bold 9px Barlow':'7px DM Mono';
+    ctx.fillText(CARDINALS_16[i],cx+Math.cos(a)*lr,cy+Math.sin(a)*lr);
+  }
+  // Geometría y datos para el tooltip
+  canvas._eco={cx,cy,r0,dr,nb,W,eco,varKey:o.varKey,stat:o.stat,units:o.units,title:o.title||''};
+  if(!canvas._ecoBound){
+    canvas._ecoBound=true;
+    canvas.addEventListener('mousemove',ecoHover);
+    canvas.addEventListener('mouseleave',ecoHide);
+  }
+}
+
+function ecoTip(){
+  let t=document.getElementById('eco-tip');
+  if(!t){t=document.createElement('div');t.id='eco-tip';t.className='eco-tip';document.body.appendChild(t);}
+  return t;
+}
+function ecoHide(){const t=document.getElementById('eco-tip');if(t) t.style.display='none';}
+function ecoHover(ev){
+  const cv=ev.currentTarget, g=cv._eco;
+  if(!g){ecoHide();return;}
+  const rc=cv.getBoundingClientRect(), k=g.W/rc.width;
+  const x=(ev.clientX-rc.left)*k-g.cx, y=(ev.clientY-rc.top)*k-g.cy;
+  const r=Math.hypot(x,y), bi=Math.floor((r-g.r0)/g.dr);
+  if(r<g.r0||bi<0||bi>=g.nb){ecoHide();return;}
+  let ang=Math.atan2(x,-y)*180/Math.PI;if(ang<0)ang+=360;
+  const di=Math.round(ang/(360/N_DIRS))%N_DIRS;
+  const v=g.eco.grid[di][bi], n=g.eco.count[di][bi], meta=ECO_VARS[g.varKey];
+  if(v==null){ecoHide();return;}
+  const t=ecoTip();
+  t.innerHTML=(g.title?`<div class="eco-tip-h">${escHtml(g.title)}</div>`:'')+
+    `<strong>${CARDINALS_16[di]}</strong> · ${ecoSpeedLabel(bi,g.units)}<br>`+
+    (g.varKey==='freq'?`${n} h`:`${meta.label} ${ECO_STATS[g.stat]}: <strong>${v.toFixed(meta.dec)} ${meta.unit}</strong><br>${n} h en la celda`);
+  t.style.display='block';
+  t.style.left=Math.min(window.innerWidth-190,ev.clientX+14)+'px';
+  t.style.top=(ev.clientY+14)+'px';
+}
+
+// Lectura de los controles de una vista ('wr' = rosa única, 'wm' = 12 rosas)
+function ecoOpts(prefix){
+  const view=(document.getElementById(prefix+'-view')||{value:'bands'}).value;
+  const isEco=view.indexOf('eco-')===0, varKey=isEco?view.slice(4):null;
+  const sg=document.getElementById(prefix+'-stat-group'), ug=document.getElementById(prefix+'-units-group');
+  if(sg) sg.style.display=(isEco&&varKey!=='freq')?'':'none';
+  if(ug) ug.style.display=isEco?'':'none';
+  return {view,isEco,varKey,
+    stat:(document.getElementById(prefix+'-stat')||{value:'mean'}).value,
+    units:(document.getElementById(prefix+'-units')||{value:'ms'}).value};
+}
+function ecoVarTitle(o){
+  const m=ECO_VARS[o.varKey];
+  return o.varKey==='freq'?'Frecuencia (horas)':`${m.label} ${ECO_STATS[o.stat]} (${m.unit})`;
+}
+function ecoLegendHtml(o,scale,wide){
+  const m=ECO_VARS[o.varKey], [lo,hi]=scale;
+  const ticks=[0,.25,.5,.75,1].map(t=>(lo+(hi-lo)*t).toFixed(m.dec&&(hi-lo)<8?1:0));
+  return `<div style="${wide?'min-width:230px':''}">
+    <div style="height:11px;border-radius:3px;border:1px solid #aab;background:linear-gradient(90deg,${m.pal.join(',')})"></div>
+    <div style="display:flex;justify-content:space-between;font-family:var(--font-m);font-size:9px;color:var(--text-secondary);margin-top:2px">${ticks.map(t=>`<span>${t}</span>`).join('')}</div>
+  </div>`;
+}
+
+// Rosa única en modo matricial
+function drawEcoSingle(canvas,o){
+  canvas.width=520;canvas.height=520;
+  const hrs=getWRHours();
+  const nb=ecoBins(windHours(),o.units);            // escala radial anual: los meses son comparables
+  const eco=computeEcoGrid(hrs,o.varKey,o.stat,o.units,nb);
+  const scale=ecoScale([eco],o.varKey);
+  drawEcoRose(canvas,eco,{...o,nb,scale,mini:false});
+  document.getElementById('wr-count').textContent=`${hrs.length.toLocaleString()} hrs`;
+  const statsEl=document.getElementById('wr-stats-panel');
+  if(!statsEl) return;
+  const m=ECO_VARS[o.varKey];
+  // Celda extrema (la de mayor valor) y promedio ponderado por horas
+  let best=null,sw=0,sn=0;
+  eco.grid.forEach((r,di)=>r.forEach((v,bi)=>{
+    if(v==null) return;
+    if(!best||v>best.v) best={v,di,bi};
+    sw+=v*eco.count[di][bi];sn+=eco.count[di][bi];
+  }));
+  const card=(l,v,u,c)=>`<div style="background:var(--bg-sidebar);border:1px solid var(--border);border-radius:6px;padding:8px 12px;margin-bottom:4px">
+      <div style="font-family:var(--font-m);font-size:9px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase">${l}</div>
+      <div style="font-family:var(--font-d);font-size:20px;font-weight:700;line-height:1.1;color:${c}">${v}<span style="font-size:11px;color:var(--text-muted);margin-left:3px">${u}</span></div>
+    </div>`;
+  statsEl.innerHTML=`
+    <div style="font-family:var(--font-m);font-size:9px;letter-spacing:1.5px;color:var(--text-muted);text-transform:uppercase;margin-bottom:6px">Rosa matricial</div>
+    ${card('Horas con viento',(eco.total-eco.calm).toLocaleString(),'hrs','var(--text-primary)')}
+    ${card('Calmas (0 m/s)',eco.total?(eco.calm/eco.total*100).toFixed(1):'0','%','var(--blue)')}
+    ${o.varKey!=='freq'&&sn&&o.stat==='mean'?card(m.label+' con viento',(sw/sn).toFixed(m.dec),m.unit,'var(--teal)'):''}
+    ${best?card('Celda máxima',best.v.toFixed(m.dec),m.unit+' · '+CARDINALS_16[best.di]+' '+ecoSpeedLabel(best.bi,o.units),'var(--orange)'):''}
+    <div style="background:var(--bg-sidebar);border:1px solid var(--border);border-radius:6px;padding:10px 12px;margin-top:4px">
+      <div style="font-family:var(--font-m);font-size:9px;letter-spacing:1.2px;color:var(--text-muted);text-transform:uppercase;margin-bottom:8px">${ecoVarTitle(o)}</div>
+      ${ecoLegendHtml(o,scale,false)}
+      <div style="font-family:var(--font-m);font-size:9px;color:var(--text-secondary);line-height:1.6;margin-top:9px">
+        Cada celda reúne las horas en que el viento sopla desde un rumbo con una velocidad dentro del anillo; el color es ${o.varKey==='freq'?'el número de horas':'la '+m.label.toLowerCase()+' '+ECO_STATS[o.stat]+' de esas horas'}.
+        Pase el cursor sobre una celda para ver su valor.
+      </div>
+    </div>`;
 }
 
 // ══════════════════════════════════════════════════════
@@ -4811,10 +5560,11 @@ function drawWindWheelOn(canvas,metricOverride){
   const metric=metricOverride||'freq';
   // Data: [month][direction] = value
   const nDir=8;
+  const _wh=windHours();   // sólo las horas del período de análisis activo
   const data=Array.from({length:12},(_,mi)=>Array.from({length:nDir},(_,di)=>{
-    const hrs=epwData.hourly.filter(h=>h.month===mi&&Math.round(h.windDir/45)%8===di);
+    const hrs=_wh.filter(h=>h.month===mi&&Math.round(h.windDir/45)%8===di);
     if(!hrs.length)return 0;
-    return metric==='freq'?hrs.length/epwData.hourly.filter(h=>h.month===mi).length*100:avg(hrs.map(h=>h.windSpd));
+    return metric==='freq'?hrs.length/_wh.filter(h=>h.month===mi).length*100:avg(hrs.map(h=>h.windSpd));
   }));
   const allVals=data.flat();
   const maxVal=Math.max(...allVals,1e-9);
@@ -4882,14 +5632,17 @@ function drawWindWheelOn(canvas,metricOverride){
       </div>`;
   }
   const cEl=document.getElementById('wr-count');
-  if(cEl) cEl.textContent=`${epwData.hourly.length.toLocaleString()} hrs`;
+  if(cEl) cEl.textContent=`${_wh.length.toLocaleString()} hrs`;
 }
 
 function drawWindAnnual(){
   if(!epwData)return;
-  const wAvg=Array.from({length:12},(_,mi)=>avg(epwData.hourly.filter(h=>h.month===mi).map(h=>h[15])));
+  const _wh=windHours();   // sólo las horas del período de análisis activo
+  const _waTag=document.getElementById('wa-tag');
+  if(_waTag) _waTag.textContent='VELOCIDAD MENSUAL · '+windPeriodLabel().toUpperCase();
+  const wAvg=Array.from({length:12},(_,mi)=>avg(_wh.filter(h=>h.month===mi).map(h=>h[15])));
   const wP90=Array.from({length:12},(_,mi)=>{
-    const v=[...epwData.hourly.filter(h=>h.month===mi).map(h=>h[15])].sort((a,b)=>a-b);
+    const v=[..._wh.filter(h=>h.month===mi).map(h=>h[15])].sort((a,b)=>a-b);
     return v[Math.floor(v.length*.9)]||0;
   });
   if(charts.wa)charts.wa.destroy();
@@ -5302,7 +6055,7 @@ function exportPDF(){
     pdf.setFillColor(0,180,166);
     pdf.rect(0,0,pW,10,'F');
     pdf.setFontSize(7);pdf.setTextColor(255,255,255);
-    pdf.text('ClimateStudio 1.8 — '+epwData.city+', '+epwData.country,4,6.5);
+    pdf.text('ClimateStudio 1.10 — '+epwData.city+', '+epwData.country,4,6.5);
     pdf.text(new Date().toLocaleDateString('es',{year:'numeric',month:'long',day:'numeric'}),pW-4,6.5,{align:'right'});
     // Image
     const imgH=(canvas.height/canvas.width)*(pW);
@@ -5312,7 +6065,7 @@ function exportPDF(){
     pdf.addImage(imgData,'JPEG',(pW-finalW)/2,yStart,finalW,finalH);
     // Footer
     pdf.setFontSize(6);pdf.setTextColor(150,150,150);
-    pdf.text('Generado con ClimateStudio 1.8 — Datos EPW: '+epwData.filename,pW/2,pH-2,{align:'center'});
+    pdf.text('Generado con ClimateStudio 1.10 — Datos EPW: '+epwData.filename,pW/2,pH-2,{align:'center'});
     pdf.save('ClimateStudio-'+epwData.city+'.pdf');
   });
 }

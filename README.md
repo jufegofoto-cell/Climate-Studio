@@ -38,6 +38,24 @@ y las fuentes (Barlow, DM Sans, DM Mono) están embebidas en el HTML.
   (*Precipitable Water*), que mide el vapor de la columna atmosférica y no es lluvia.
   Si el archivo no trae precipitación —el caso de buena parte de los TMY3 e IWEC—,
   lo dice explícitamente en lugar de mostrar ceros.
+- **Viento con período horario de análisis**: un selector común a todas las vistas
+  de la pestaña (rosa, rueda anual, perfil mensual y 12 rosas) acota el análisis a un
+  tramo predefinido o a un período **personalizado**: cualquier combinación de las 24
+  horas, contigua o no (p. ej. 08–12 + 14–18), incluidos los tramos que cruzan la
+  medianoche (p. ej. 22–06). La hora *h* cubre el intervalo *h*:00–(*h*+1):00, igual
+  que el EPW.
+- **Rosa matricial (tipo Ecotect «Prevailing Winds»)**: divide el plano polar en celdas
+  de dirección (16 rumbos) × velocidad (anillos de 1 m/s o 5 km/h) y colorea cada una
+  con la frecuencia en horas, la **temperatura del aire** o la **humedad relativa**
+  (media, mínima o máxima) de las horas que caen en ella. Disponible en la rosa única y
+  en las 12 rosas mensuales, que comparten escala radial y de color para ser
+  comparables. Las calmas (0 m/s) no tienen dirección y se informan aparte.
+- **Tabla resumen de viento mes × hora**: velocidad media (todos los registros, calmas
+  incluidas) y dirección media circular de los registros con viento (velocidad > 0),
+  como rumbo de 16 puntos, en grados o ambos. Incluye la fila «Promedio anual» y una
+  columna con el promedio del período, calculadas sobre los registros horarios y no
+  como media de medias. Se exporta a **Excel (.xlsx) con formato** y a CSV; el libro se
+  genera en el propio HTML, sin librerías ni conexión.
 - **Corrector térmico de archivos EPW**: desplaza las temperaturas un número dado de
   grados —uniforme, diferenciado día/noche o mes a mes— conservando la coherencia
   entre bulbo seco, punto de rocío y humedad relativa. Pensado para representar la
@@ -67,10 +85,10 @@ climatestudio-desktop/
 ## Compilar en GitHub
 
 1. Sube esta carpeta a un repositorio.
-2. **Actions → Build Windows → Run workflow** (o empuja una etiqueta `v1.9.2`).
+2. **Actions → Build Windows → Run workflow** (o empuja una etiqueta `v1.10.0`).
 3. Descarga desde la pestaña **Releases**:
-   - `ClimateStudio-1.9.2-portable.exe` → se abre sin instalar.
-   - `ClimateStudio-1.9.2-setup.exe` → instalador.
+   - `ClimateStudio-1.10.0-portable.exe` → se abre sin instalar.
+   - `ClimateStudio-1.10.0-setup.exe` → instalador.
 
 El instalador es **por usuario** (`perMachine: false`): no pide permisos de
 administrador y se instala en `%LOCALAPPDATA%`. Si se necesita una instalación
